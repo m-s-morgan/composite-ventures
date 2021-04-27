@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  font-size: 4.5vw;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+section {
+  height: 50em;
+  height: 100vh;
+  position: relative;
+}
+
+.w-150 {
+  width: 150rem;
+}
+
+.min-100vh {
+  min-height: 50em;
+  min-height: 100vh;
+}
+
+.auto-section {
+  min-height: 50em;
+  min-height: 100vh;
+  height: auto;
+}
+
+.shroud {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.shroud-light {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.shroud-heavy {
+  background-color: rgba(0,0,0,0.6);
+}
+
+.shroud-white {
+  background-color: rgba(255,255,255,0.85);
+}
+
+.h-block {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.v-block {
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-contain {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.s-contain {
+  position: relative;
+}
+
+.next-section {
+  display: block;
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  bottom: 1em;
+  right: 1em;
+  font-size: 2rem;
+  text-align: center;
+  z-index: 10;
+}
+
+.next-section img {
+  height: 100%;
+}
+
+.no-resize {
+  resize: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.carousel,
+.carousel-root,
+.slider-wrapper,
+.slider {
+  height: 100%;
+  width: 100% !important;
+}
+
+.carousel .carousel-slider {
+  margin: 0 !important;
+}
+
+.carousel .slider-wrapper {
+  transition: none !important;
+  margin: 0 !important;
+}
+
+.carousel .slider.animated {
+  -moz-transition: transform 1500ms ease-in-out !important;
+  -webkit-transition: transform 1500ms ease-in-out !important;
+  transition: transform 1500ms ease-in-out !important;
+}
+
+.carousel .slide {
+  text-align: left !important;
+  height: 100% !important;
+}
+
+.carousel .control-dots {
+  bottom: 1.5em !important;
+}
+
+.swal2-popup {
+  max-height: 45em;
+  max-height: 95vh;
+}
+
+.swal2-content {
+  max-height: 10em;
+  max-height: 30vh;
+  overflow-y: auto;
+  width: 100%;
+  text-align: left !important;
+}
+
+.swal2-content p {
+  margin: 0.5em 0;
+}
+
+@media (min-width: 500px) {
+  body {
+    font-size: 18px;
+  }
+}

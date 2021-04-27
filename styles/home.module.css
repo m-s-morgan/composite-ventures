@@ -1,0 +1,82 @@
+.container {
+    position: relative;
+}
+
+.thesis {
+    background-image: url('/backgrounds/spacecloud.jpg');
+}
+
+.portfolio {
+    background-image: url('/backgrounds/starry.jpg');
+}
+
+.team {
+    background-image: url('/backgrounds/space2.jpg');
+}
+
+.advisors {
+    background-image: url('/backgrounds/streak.jpg');
+}
+
+.contact {
+    background-image: url('/backgrounds/moon.jpg');
+}
+
+.advisor {
+    cursor: pointer;
+}
+
+.teamPic {
+    filter: grayscale(100%);
+}
+
+.teamPic:hover {
+    filter: none;
+}
+
+.advisor .advisorPic {
+    filter: grayscale(100%);
+}
+
+.advisor:hover .advisorPic {
+    filter: none;
+}
+
+.appear {
+    background-color: rgba(0,0,0,0.85);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 1em;
+}
+
+.form {
+    width: 35em;
+}
+
+.vyng {
+    background-image: url('/portfolio/vyng.png');
+}
+
+.spycloud {
+    background-image: url('/portfolio/spycloud.png');
+}
+
+.sensorind {
+    background-image: url('/portfolio/sensor.png');
+}
+
+.covalence {
+    background-image: url('/portfolio/covalence.png');
+}
+
+.knoppbio {
+    background-image: url('/portfolio/knoppbio.png');
+}
+
+.pole3 {
+    background-image: url('/portfolio/thirdpole.png');
+}
