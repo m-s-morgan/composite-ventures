@@ -11,16 +11,16 @@ export default function Navbar() {
     };
 
     return (
-        <nav className={`${styles.navbar} bg-black opacity-90`}>
+        <nav className={`${styles.navbar} bg-black opacity-80`}>
             <div className="max-w-screen-xl mx-auto px-2 sm:px-6 lg:px-8">
-                <div className="relative flex items-center justify-between h-16">
+                <div className="relative flex items-center justify-between h-24">
                     <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                         <button type="button" className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" onClick={() => toggleMenu(!toggle)}>
                             <span className="sr-only">Open main menu</span>
-                            <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <svg className="block h-12 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                             </svg>
-                            <svg className="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <svg className="hidden h-12 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                             </svg>
                         </button>
@@ -28,12 +28,12 @@ export default function Navbar() {
                     <div className="flex-1 flex items-center sm:items-stretch sm:justify-between">
                         <div className="flex-shrink-0 flex items-center">
                             <a href="#top" className="text-gray-300 hover:underline hover:text-white px-3 py-2 rounded-md text-sm font-medium" onClick={() => toggleMenu(false)}>
-                                <img className="block lg:hidden h-12 w-auto" src="/logos/star.png" alt="Starpath Ventures" />
-                                <img className="hidden lg:block h-12 w-auto" src="/logos/logo_light.png" alt="Starpath Ventures" />
+                                <img className="block lg:hidden h-16 w-auto" src="/logos/mark-dark-2.png" alt="Composite Ventures" />
+                                <img className="hidden lg:block h-16 w-auto" src="/logos/logo-dark-2.png" alt="Composite Ventures" />
                             </a>
                         </div>
                         <div className="hidden sm:block sm:ml-6">
-                            <div className="flex space-x-4 pt-1">
+                            <div className="flex space-x-4 pt-3">
                                 <a href="#about" className="text-gray-300 hover:underline hover:text-white px-3 py-5 rounded-md text-sm font-medium">About</a>
                                 <a href="#thesis" className="text-gray-300 hover:underline hover:text-white px-3 py-5 rounded-md text-sm font-medium">Thesis</a>
                                 <a href="#portfolio" className="text-gray-300 hover:underline hover:text-white px-3 py-5 rounded-md text-sm font-medium">Portfolio</a>

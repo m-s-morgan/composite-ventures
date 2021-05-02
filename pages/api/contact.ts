@@ -11,11 +11,11 @@ const mailGenerator: any = new MailGen({
   theme: 'default',
   product: {
       // Appears in header & footer of e-mails
-      name: 'Starpath Ventures',
-      link: 'http://starpathventures.com',
+      name: 'Composite Ventures',
+      link: 'http://composite.ventures',
       // Optional product logo
-      logo: `http://starpathventures.com/logos/logo_dark.png`,
-      copyright: `Copyright © 2021 Starpath Ventures. All rights reserved.`
+      logo: `http://composite.ventures/logos/logo-light.png`,
+      copyright: `Copyright © 2021 Composite Ventures. All rights reserved.`
   }
 });
 
@@ -53,7 +53,7 @@ ${cKey}: ${body[k]}  <br>
       };
 
       mailgun.messages().send({
-        subject: 'Starpath Contact Form',
+        subject: 'Composite Ventures Contact Form',
         to: config.smtp.to,
         from: config.smtp.from,
         html: mailGenerator.generate(emailBody),

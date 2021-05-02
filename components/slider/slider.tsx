@@ -1,16 +1,27 @@
 import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Carousel from "react-slick";
 import styles from './slider.module.css';
 
 export default function Slider(props: ISliderProps) {
+    const settings = {
+        dots: true,
+        fade: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
+    };
+
     return (
-        <Carousel autoPlay={props.auto} infiniteLoop={true} swipeable={false} interval={5000} showArrows={false} showStatus={false} showThumbs={false} transitionTime={1500} stopOnHover={false}>
+        <Carousel { ...settings }>
             {
                 props.slides.map((s, i) => {
                     return (
-                        <div key={i} className={styles.slide}>
-                            <h1 className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${styles.header}`}>{s}</h1>
+                        <div key={i} className={`bg-cover ${styles.slide}`}>
+                            <div className="h-full" style={{ backgroundImage: `url(${s.hero})` }}></div>
                         </div>
                     );
                 })
@@ -20,6 +31,5 @@ export default function Slider(props: ISliderProps) {
 }
 
 export interface ISliderProps {
-    slides: string[];
-    auto?: boolean;
+    slides: { hero?: string; thumbnail?: string; }[];
 }

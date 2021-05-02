@@ -48,6 +48,7 @@ section {
   top: 0;
   width: 100%;
   height: 100%;
+  z-index: 100;
 }
 
 .shroud-light {
@@ -118,33 +119,17 @@ section {
   box-sizing: border-box;
 }
 
-.carousel,
-.carousel-root,
-.slider-wrapper,
-.slider {
+.slick-slider,
+.slick-list,
+.slick-track,
+.slick-slide,
+.slick-slide > div {
   height: 100%;
-  width: 100% !important;
 }
 
-.carousel .carousel-slider {
-  margin: 0 !important;
-}
-
-.carousel .slider-wrapper {
-  transition: none !important;
-  margin: 0 !important;
-}
-
-.carousel .slider.animated {
-  -moz-transition: transform 1500ms ease-in-out !important;
-  -webkit-transition: transform 1500ms ease-in-out !important;
-  transition: transform 1500ms ease-in-out !important;
-}
-
-.carousel .slide {
-  text-align: left !important;
-  height: 100% !important;
-}
+/* .slick-list {
+  overflow: hidden;
+} */
 
 .carousel .control-dots {
   bottom: 1.5em !important;

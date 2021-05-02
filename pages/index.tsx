@@ -9,9 +9,18 @@ import 'isomorphic-fetch';
 import 'animate.css/animate.min.css';
 
 const slides = [
-  'Building Smarter Companies Faster',
-  'Strategic Capital, High Conviction',
-  'Relationship Driven, Robust Network'
+  {
+    hero: '/backgrounds/background-1.jpg',
+    thumbnail: '',
+  },
+  {
+    hero: '/backgrounds/background-2.jpg',
+    thumbnail: '',
+  },
+  {
+    hero: '/backgrounds/background-5.jpg',
+    thumbnail: '',
+  }
 ];
 const sectionContainer = 's-contain h-full max-w-screen-xl mx-auto px-5 z-10 sm:px-6 lg:px-8';
 const advisors = [
@@ -40,14 +49,14 @@ export default function Home() {
     error: false,
     success: false,
   });
-  const [hero, setHero] = useState('/backgrounds/earthsmall.jpg');
+  // const [hero, setHero] = useState('/backgrounds/earthsmall.jpg');
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {
-    const heroImg = new Image();
-    heroImg.onload = () => {
-      setHero(heroImg.src);
-    };
-    heroImg.src = '/backgrounds/earth.jpg';
+    // const heroImg = new Image();
+    // heroImg.onload = () => {
+    //   setHero(heroImg.src);
+    // };
+    // heroImg.src = '/backgrounds/earth.jpg';
 
     setTimeout(() => {
       setLoaded(true);
@@ -138,20 +147,20 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Starpath Ventures</title>
-        <link rel="preload" href="/backgrounds/earth.jpg" as="image" type="image/jpeg"></link>
+        <title>Composite Ventures</title>
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
         <link rel="icon" href="/favicon/favicon.ico" />
         <link rel="manifest" href="/favicon/site.webmanifest" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
       </Head>
       <Navbar></Navbar>
       <main>
-        <section id="top" className="bg-cover bg-black transition-all" style={{ backgroundImage: `url(${hero})` }}>
+        <section id="top" className="bg-cover bg-black transition-all">
           <div className="shroud shroud-light"></div>
+          <Slider slides={slides}></Slider>
           <div className={`${sectionContainer} ${loaded ? 'transition-opacity duration-500' : 'opacity-0'}`}>
-            <Slider slides={slides} auto={true}></Slider>
             <a className="next-section" href="#about">
               <img src="/misc/downarrow_light.png" alt="About" />
             </a>
@@ -327,9 +336,9 @@ export default function Home() {
           </div>
           <footer className="absolute bg-black left-0 bottom-0 w-full z-10">
             <div className="max-w-screen-xl mx-auto h-16 px-2 sm:px-6 lg:px-8 flex items-center justify-between text-center text-white">
-              <img className="block lg:hidden h-12 w-auto" src="/logos/star.png" alt="Starpath Ventures" />
-              <img className="hidden lg:block h-12 w-auto" src="/logos/logo_light.png" alt="Starpath Ventures" />
-              <div className="text-xs">Copyright © 2021 Starpath Ventures<br />All rights reserved</div>
+              <img className="block lg:hidden h-12 w-auto" src="/logos/dark-mark-2.png" alt="Composite Ventures" />
+              <img className="hidden lg:block h-12 w-auto" src="/logos/logo-dark-2.png" alt="Composite Ventures" />
+              <div className="text-xs">Copyright © 2021 Composite Ventures<br />All rights reserved</div>
               <a className="block" href="#top">
                 <img className="h-6" src="/misc/uparrow_light.png" alt="Top" />
               </a>
