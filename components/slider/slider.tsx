@@ -1,5 +1,6 @@
 import React from 'react';
-import Carousel from "react-slick";
+import Carousel from 'react-slick';
+import Hero from '../hero/hero';
 import styles from './slider.module.css';
 
 export default function Slider(props: ISliderProps) {
@@ -20,8 +21,10 @@ export default function Slider(props: ISliderProps) {
             {
                 props.slides.map((s, i) => {
                     return (
-                        <div key={i} className={`bg-cover ${styles.slide}`}>
-                            <div className="h-full" style={{ backgroundImage: `url(${s.hero})` }}></div>
+                        <div key={i} className={`${styles.slide}`}>
+                            <div className="shroud"></div>
+                            <Hero hero={s.hero} thumbnail={s.thumbnail}></Hero>
+                            <h1 className={`text-3xl sm:text-5xl md:text-6xl ${styles.header}`}>{s.header}</h1>
                         </div>
                     );
                 })
@@ -31,5 +34,9 @@ export default function Slider(props: ISliderProps) {
 }
 
 export interface ISliderProps {
-    slides: { hero?: string; thumbnail?: string; }[];
+    slides: {
+        hero?: string;
+        thumbnail?: string;
+        header?: string;
+    }[];
 }

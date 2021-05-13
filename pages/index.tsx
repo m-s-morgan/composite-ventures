@@ -11,15 +11,18 @@ import 'animate.css/animate.min.css';
 const slides = [
   {
     hero: '/backgrounds/background-1.jpg',
-    thumbnail: '',
+    thumbnail: '/thumbnails/background-1.jpg',
+    header: 'Defining the Next-Generation of Retail Technology',
   },
   {
     hero: '/backgrounds/background-2.jpg',
-    thumbnail: '',
+    thumbnail: '/thumbnails/background-2.jpg',
+    header: 'Defining the Next-Generation of Retail Technology',
   },
   {
     hero: '/backgrounds/background-5.jpg',
-    thumbnail: '',
+    thumbnail: '/thumbnails/background-5.jpg',
+    header: 'Defining the Next-Generation of Retail Technology',
   }
 ];
 const sectionContainer = 's-contain h-full max-w-screen-xl mx-auto px-5 z-10 sm:px-6 lg:px-8';
@@ -158,7 +161,6 @@ export default function Home() {
       <Navbar></Navbar>
       <main>
         <section id="top" className="bg-cover bg-black transition-all">
-          <div className="shroud shroud-light"></div>
           <Slider slides={slides}></Slider>
           <div className={`${sectionContainer} ${loaded ? 'transition-opacity duration-500' : 'opacity-0'}`}>
             <a className="next-section" href="#about">
