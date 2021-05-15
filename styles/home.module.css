@@ -2,6 +2,79 @@
     position: relative;
 }
 
+.heroMask {
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    bottom: -1px;
+    pointer-events: none;
+    border-bottom: 1px solid white;
+    z-index: 15;
+}
+
+.heroMask:before,
+.heroMask:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: -webkit-calc(50% - 45px);
+    width: calc(50% - 45px);
+    height: -webkit-calc(100% + 1px);
+    height: calc(100% + 1px);
+    bottom: -1px;
+    background: white;
+}
+
+.heroMask:after {
+    right: 0;
+}
+
+.heroMask svg {
+    display: block;
+    position: absolute;
+    width: 91px;
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+.heroMask svg polygon {
+    fill: white;
+}
+
+.underline {
+    width: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 2px solid rgb(180,180,180);
+}
+
+.imgShroud {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0.5), white, rgba(255,255,255,0.5));
+}
+
+.thesisBorder {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-image: url('/backgrounds/pattern-1.jpg');
+}
+
+.thesisBorderLeft {
+    left: 0;
+}
+
+.thesisBorderRight {
+    right: 0;
+}
+
 .thesis {
     background-image: url('/backgrounds/spacecloud.jpg');
 }

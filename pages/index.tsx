@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Swal from 'sweetalert2';
 import marked from 'marked';
-import { FormEvent, ChangeEvent, useState, useEffect } from 'react';
+import { FormEvent, ChangeEvent, useState } from 'react';
 import Navbar from '../components/navbar/navbar';
 import Slider from '../components/slider/slider';
 import styles from '../styles/home.module.css';
@@ -25,7 +25,7 @@ const slides = [
     header: 'Defining the Next-Generation of Retail Technology',
   }
 ];
-const sectionContainer = 's-contain h-full max-w-screen-xl mx-auto px-5 z-10 sm:px-6 lg:px-8';
+const sectionContainer = 's-contain h-full max-w-screen-xl mx-auto px-5 z-40 sm:px-6 lg:px-8';
 const advisors = [
   {
     name: 'Jim Armstrong',
@@ -52,19 +52,6 @@ export default function Home() {
     error: false,
     success: false,
   });
-  // const [hero, setHero] = useState('/backgrounds/earthsmall.jpg');
-  const [loaded, setLoaded] = useState(false);
-  useEffect(() => {
-    // const heroImg = new Image();
-    // heroImg.onload = () => {
-    //   setHero(heroImg.src);
-    // };
-    // heroImg.src = '/backgrounds/earth.jpg';
-
-    setTimeout(() => {
-      setLoaded(true);
-    }, 500);
-  }, []);
   const onAdvisor = (index: number) => {
     const advisor = advisors[index];
 
@@ -156,56 +143,44 @@ export default function Home() {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
         <link rel="icon" href="/favicon/favicon.ico" />
         <link rel="manifest" href="/favicon/site.webmanifest" />
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+        <link rel="stylesheet" type="text/css" charSet="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
       </Head>
       <Navbar></Navbar>
       <main>
         <section id="top" className="bg-cover bg-black transition-all">
           <Slider slides={slides}></Slider>
-          <div className={`${sectionContainer} ${loaded ? 'transition-opacity duration-500' : 'opacity-0'}`}>
-            <a className="next-section" href="#about">
-              <img src="/misc/downarrow_light.png" alt="About" />
-            </a>
+          <div className={styles.heroMask}> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86.38 33.3"><g><polygon points="0 0 0 33.3 86.38 33.3 86.38 0 42.2 33.3 0 0"></polygon></g></svg></div>
+        </section>
+        <section id="thesis" className={`${styles.thesis} half-section text-center`}>
+          <div className={`${sectionContainer}`}>
+            <div className="h-full flex flex-col items-center justify-center pt-20 pb-24 md:pt-36 md:pb-40">
+              <div className={styles.imgShroud}></div>
+              <div className="relative z-50">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl mb-5">Our Mission</h2>
+                <div className={`${styles.underline} mb-6`}></div>
+                <h3 className="text-lg sm:text-xl md:text-2xl px-4 md:px-10 lg:px-20">To partner with market leaders for insight and access, connecting the world of disruptive companies by leveraging our extensive network and ecosystem.</h3>
+              </div>
+            </div>
           </div>
+          <div className={`${styles.thesisBorder} ${styles.thesisBorderLeft} w-36 xl:w-52 2xl:w-80 bg-cover hidden lg:block`}></div>
+          <div className={`${styles.thesisBorder} ${styles.thesisBorderRight} w-36 xl:w-52 2xl:w-80 bg-cover hidden lg:block`}></div>
         </section>
         <section id="about">
           <div className={sectionContainer}>
             <div className="h-full flex flex-col items-center justify-center md:flex-row md:justify-around">
-              <div className="w-150 max-w-full md:pr-14">
-                <img className="w-full" src="/backgrounds/launch.jpg" alt="Launch" />
+              <div className="w-205 max-w-full md:pr-14">
+                <img className="w-full" src="/backgrounds/background-9.jpg" alt="About Us" />
               </div>
               <div>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-5 mb-5 md:mt-0">We are a venture growth firm focused on early stage investments across the United States</h2>
-                <p className="text-gray-500">Our mission is to foster a hands on, value-add approach, working side-by-side with our entrepreneurs every step of the way.</p>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-5 mb-5 md:mt-0">A unique type of venture fund</h2>
+                <p className="text-gray-500">With an exclusive focus on retail, restaurants and next-generation commerce technologies, we initiate investments into a pre-configured portfolio that includes indications of pre-money valuations and types of securities. The principals of the Fund, proven experts in their field, have done the hard work to assemble a group of private, growing and sector leading companies that will represent the future of retail technology.</p>
               </div>
             </div>
-            <a className="next-section" href="#thesis">
-              <img src="/misc/downarrow.png" alt="Thesis" />
-            </a>
           </div>
           <div className="v-block bg-gray-100"></div>
           <div className="h-block bg-gray-100"></div>
-        </section>
-        <section id="thesis" className={`${styles.thesis} auto-section bg-cover bg-black text-center text-white`}>
-          <div className="shroud shroud-heavy"></div>
-          <div className={`${sectionContainer} min-100vh`}>
-            <div className="h-full flex flex-col items-center justify-center py-24 md:py-40">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-5">Our strategy is to take an active role in the formation and management of early stage companies</h2>
-              <h3 className="text-xl sm:text-2xl md:text-3xl mb-5">We look for companies with potential for significant growth, primarily in SaaS technology as well as in consumer and retail technology</h3>
-              <p className="text-gray-300 mb-5">When we discover new opportunities outside our areas of expertise, we tap into our strong network of key advisors and relationships. Our external network allows us to expand our investment universe, giving us a significant competitive advantage in selecting the right investments.</p>
-              <p className="italic mb-5">Investment Criteria</p>
-              <div className="grid md:grid-cols-6 gap-4 px-5">
-                <div className="border border-white p-10 md:col-span-2">An innovative solution that offers a novel approach in addressing an unmet and critical market need</div>
-                <div className="border border-white p-10 md:col-span-2 md:pt-16">Seed investment to Series D</div>
-                <div className="border border-white p-10 md:col-span-2">A disruptive technology that is difficult to replicate or is patent-protected</div>
-                <div className="border border-white p-10 md:col-span-3">A substantial market size and the potential for recurring revenues</div>
-                <div className="border border-white p-10 md:col-span-3">Achievable business plan with a clear and carefully planned path to profitability and liquidity</div>
-              </div>
-            </div>
-            <a className="next-section" href="#portfolio">
-              <img src="/misc/downarrow_light.png" alt="Portfolio" />
-            </a>
-          </div>
+          <div className="t-block bg-gray-100"></div>
         </section>
         <section id="portfolio" className={`${styles.portfolio} auto-section bg-cover text-center`}>
           <div className="shroud shroud-white"></div>
@@ -257,9 +232,6 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <a className="next-section" href="#team">
-              <img src="/misc/downarrow.png" alt="Team" />
-            </a>
           </div>
         </section>
         <section id="team" className={`${styles.team} auto-section bg-cover bg-black text-white text-center`}>
@@ -279,9 +251,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <a className="next-section" href="#advisors">
-              <img src="/misc/downarrow_light.png" alt="Advisors" />
-            </a>
           </div>
         </section>
         <section id="advisors" className={`${styles.advisors} auto-section bg-cover text-center`}>
@@ -302,9 +271,6 @@ export default function Home() {
                 }
               </div>
             </div>
-            <a className="next-section" href="#contact">
-              <img src="/misc/downarrow.png" alt="Contact Us" />
-            </a>
           </div>
         </section>
         <section id="contact" className={`${styles.contact} bg-cover bg-black text-center text-white`}>
@@ -336,7 +302,7 @@ export default function Home() {
               </form>
             </div>
           </div>
-          <footer className="absolute bg-black left-0 bottom-0 w-full z-10">
+          <footer className="absolute bg-black left-0 bottom-0 w-full z-50">
             <div className="max-w-screen-xl mx-auto h-16 px-2 sm:px-6 lg:px-8 flex items-center justify-between text-center text-white">
               <img className="block lg:hidden h-12 w-auto" src="/logos/dark-mark-2.png" alt="Composite Ventures" />
               <img className="hidden lg:block h-12 w-auto" src="/logos/logo-dark-2.png" alt="Composite Ventures" />
