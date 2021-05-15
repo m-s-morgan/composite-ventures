@@ -152,8 +152,8 @@ export default function Home() {
           <Slider slides={slides}></Slider>
           <div className={styles.heroMask}> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86.38 33.3"><g><polygon points="0 0 0 33.3 86.38 33.3 86.38 0 42.2 33.3 0 0"></polygon></g></svg></div>
         </section>
-        <section id="thesis" className={`${styles.thesis} half-section text-center`}>
-          <div className={`${sectionContainer}`}>
+        <section id="thesis" className="half-section text-center">
+          <div className={sectionContainer}>
             <div className="h-full flex flex-col items-center justify-center pt-20 pb-24 md:pt-36 md:pb-40">
               <div className={styles.imgShroud}></div>
               <div className="relative z-50">
@@ -173,7 +173,7 @@ export default function Home() {
                 <img className="w-full" src="/backgrounds/background-9.jpg" alt="About Us" />
               </div>
               <div>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-5 mb-5 md:mt-0">A unique type of venture fund</h2>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mt-5 mb-5 md:mt-0">A unique type of venture fund</h2>
                 <p className="text-gray-500">With an exclusive focus on retail, restaurants and next-generation commerce technologies, we initiate investments into a pre-configured portfolio that includes indications of pre-money valuations and types of securities. The principals of the Fund, proven experts in their field, have done the hard work to assemble a group of private, growing and sector leading companies that will represent the future of retail technology.</p>
               </div>
             </div>
@@ -182,52 +182,37 @@ export default function Home() {
           <div className="h-block bg-gray-100"></div>
           <div className="t-block bg-gray-100"></div>
         </section>
-        <section id="portfolio" className={`${styles.portfolio} auto-section bg-cover text-center`}>
-          <div className="shroud shroud-white"></div>
-          <div className={`${sectionContainer} min-100vh`}>
-            <div className="h-full min-100vh flex flex-col items-center justify-center py-24 md:py-40">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-9">Portfolio</h2>
-              <div className="grid md:grid-cols-3 px-5">
-                <a href="http://www.vyng.me/" target="_blank" className="block relative h-80 w-80 max-w-100 border border-gray-500 bg-white md:border-r-0">
-                  <div className={`${styles.vyng} bg-contain h-full`}></div>
+        <section id="portfolio" className="auto-height text-center">
+          <div className="s-contain">
+            <div className="pt-24 md:pt-40">
+              <h2 className="text-3xl md:text-5xl mb-24">Our Portfolio</h2>
+              <div className="grid md:grid-cols-2 w-full">
+                <a href="http://bridg.com/" target="_blank" className="block relative h-80 w-full border border-gray-500 bg-white border-l-0 border-r-0">
+                  <div className={`${styles.bridg} bg-center h-full`}></div>
                   <div className={`${styles.appear} text-white opacity-0 transition-opacity duration-500 hover:opacity-100 flex flex-col justify-center items-center`}>
-                    <h3 className="text-xl font-bold mb-5">Vyng</h3>
-                    <p className="text-sm">A next-generation Caller ID platform that visualizes every call to start better conversations between friends, families, and businesses. Their app replaces your old-school dialer and visualizes unknown calls with videos, animation, stickers and more.</p>
+                    <h3 className="text-xl font-bold mb-5">BRIDG</h3>
+                    <p className="text-sm">A leading, innovative, data informed CDP</p>
                   </div>
                 </a>
-                <a href="https://spycloud.com/" target="_blank" className="block relative h-80 w-80 max-w-100 border border-gray-500 bg-white border-t-0 md:border-t">
-                  <div className={`${styles.spycloud} bg-contain h-full`}></div>
+                <a href="http://branchapp.com/" target="_blank" className="block relative h-80 w-full border border-gray-500 bg-white border-r-0 border-l-0 border-t-0 md:border-t md:border-l">
+                  <div className={`${styles.branch} bg-center h-full`}></div>
                   <div className={`${styles.appear} text-white opacity-0 transition-opacity duration-500 hover:opacity-100 flex flex-col justify-center items-center`}>
-                    <h3 className="text-xl font-bold mb-5">SpyCloud</h3>
-                    <p className="text-sm">A leader in account takeover (ATO) prevention, protecting billions of consumer and employee accounts either directly or through product integrations. The Company's award winning solutions proactively defeat fraud attempts and disrupt the criminals' ability to profit from stolen information.</p>
+                    <h3 className="text-xl font-bold mb-5">BRANCH</h3>
+                    <p className="text-sm">Changing the way employees get paid, and the way they think about banking</p>
                   </div>
                 </a>
-                <a href="https://www.sensorindustries.com/" target="_blank" className="block relative h-80 w-80 max-w-100 border border-gray-500 bg-white border-t-0 md:border-t md:border-l-0">
-                  <div className={`${styles.sensorind} bg-contain h-full`}></div>
+                <a href="https://handiq.com/" target="_blank" className="block relative h-80 w-full border border-gray-500 bg-white border-t-0 border-r-0 border-l-0 md:border-b-0">
+                  <div className={`${styles.handiq} bg-center h-full`}></div>
                   <div className={`${styles.appear} text-white opacity-0 transition-opacity duration-500 hover:opacity-100 flex flex-col justify-center items-center`}>
-                    <h3 className="text-xl font-bold mb-5">Sensor Industries</h3>
-                    <p className="text-sm">Leverages its proprietary and patented technology harnessing data that utilizes the Internet of Things (IoT) to identify and eliminate water waste on a massive scale, saving multi-unit property owners thousands in utility costs each month.</p>
+                    <h3 className="text-xl font-bold mb-5">HANDIQ</h3>
+                    <p className="text-sm">Verified hygiene at every location</p>
                   </div>
                 </a>
-                <a href="https://covalence.io/" target="_blank" className="bg-contain block relative h-80 w-80 max-w-100 border border-gray-500 bg-white border-t-0 md:border-r-0">
-                  <div className={`${styles.covalence} bg-contain h-full`}></div>
+                <a href="https://www.privacydynamics.io/" target="_blank" className="block relative h-80 w-full border border-gray-500 bg-white border-t-0 border-r-0 border-l-0 border-b-0 md:border-l">
+                  <div className={`${styles.pdynamics} bg-center h-full`}></div>
                   <div className={`${styles.appear} text-white text-white opacity-0 transition-opacity duration-500 hover:opacity-100 flex flex-col justify-center items-center`}>
-                    <h3 className="text-xl font-bold mb-5">Covalence</h3>
-                    <p className="text-sm">A 21st century, fully online, fully remote trade school that trains skilled software developers for 22nd century careers by teaching them to learn the one thing they'll actually be doing day-in and day-out: reading, writing, and understanding software.</p>
-                  </div>
-                </a>
-                <a href="https://www.knoppbio.com/" target="_blank" className="block relative h-80 w-80 max-w-100 border border-gray-500 bg-white border-t-0">
-                  <div className={`${styles.knoppbio} bg-contain h-full`}></div>
-                  <div className={`${styles.appear} text-white opacity-0 transition-opacity duration-500 hover:opacity-100 flex flex-col justify-center items-center`}>
-                    <h3 className="text-xl font-bold mb-5">Knopp Biosciences</h3>
-                    <p className="text-sm">A privately held drug discovery and development company focused on delivering breakthrough treatments for immunological and neurological diseases of high unmet need.</p>
-                  </div>
-                </a>
-                <a href="https://www.pole3.com/" target="_blank" className="block relative h-80 w-80 max-w-100 border border-gray-500 bg-white border-t-0 md:border-l-0">
-                  <div className={`${styles.pole3} bg-contain h-full`}></div>
-                  <div className={`${styles.appear} text-white opacity-0 transition-opacity duration-500 hover:opacity-100 flex flex-col justify-center items-center`}>
-                    <h3 className="text-xl font-bold mb-5">Third Pole</h3>
-                    <p className="text-sm">A US-based company developing next generation life-saving cardiopulmonary therapies. The Company is building on their team's legacy in inhaled nitric oxide (NO), the current standard of care, to develop next generation life-saving heart and lung therapies.</p>
+                    <h3 className="text-xl font-bold mb-5">PRIVACY DYNAMICS</h3>
+                    <p className="text-sm">Making sure the companies you work with keep your data private</p>
                   </div>
                 </a>
               </div>
@@ -237,20 +222,6 @@ export default function Home() {
         <section id="team" className={`${styles.team} auto-section bg-cover bg-black text-white text-center`}>
           <div className="shroud shroud-heavy"></div>
           <div className={`${sectionContainer} min-100vh`}>
-            <div className="h-full min-100vh flex flex-col items-center justify-center py-24 md:flex-row md:justify-around md:py-40">
-              <div className="w-150 max-w-full md:pr-14">
-                <img className={`${styles.teamPic} transition-all duration-500 w-full rounded-full`} src="/team/mikemarsh.jpg" alt="Mike Marsh" />
-              </div>
-              <div>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-5 mb-3 md:mt-0">Mike Marsh</h2>
-                <h3 className="text-lg sm:text-xl md:text-2xl mb-5">Managing Partner</h3>
-                <div className="text-gray-300 text-left text-sm md:text-base">
-                  <p className="my-3">Mr. Marsh is an experienced investor, fundraiser and former investment banker. At Starpath, he develops and maintains a strong network of key industry players in the venture capital industry. His passion is working with select early stage companies and entrepreneurs helping them to achieve a clear and carefully planned path to profitability. Mike has assisted his portfolio companies with over $100M of fundraising for various financing rounds, both in equity and convertible debt.</p>
-                  <p className="my-3">Mike first entered the venture ecosystem when he raised the seed round for Covalence, a reputable online coding and training platform, with three former Microsoft developers in 2012. He currently sits on the Company’s board and helps manage subsequent financing rounds. Mr. Marsh is also an advisor to Vyng, a next generation phone platform that visualizes every call. In addition to his role at Starpath, Mike is a principal and minority partner at Composite Ventures, an early stage venture firm focused on retail technology investing. At Composite, he works alongside his mentor and advisor, Jim Armstrong, who is the firm's founder and is one of the most notable venture investors in the United States, having been selected to the Forbes Midas list on several occasions.</p>
-                  <p className="my-3">Mr. Marsh earned a BS in Finance from the University of Central Florida and obtained his MBA from the Johnson School of Management at Cornell University, with a concentration in investment banking and private equity. At Cornell, he was very active in BR Ventures (BRV), an early stage venture capital fund operated entirely by MBA students at the University. Notably, Mike was selected in the Top 50 globally for the 2020 VC Unlocked cohort led by Stanford University and 500 Startups. The program is designed to represent the next generation of leaders in the venture capital industry.</p>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
         <section id="advisors" className={`${styles.advisors} auto-section bg-cover text-center`}>

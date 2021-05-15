@@ -75,14 +75,6 @@
     right: 0;
 }
 
-.thesis {
-    background-image: url('/backgrounds/spacecloud.jpg');
-}
-
-.portfolio {
-    background-image: url('/backgrounds/starry.jpg');
-}
-
 .team {
     background-image: url('/backgrounds/space2.jpg');
 }
@@ -130,26 +122,20 @@
     width: 35em;
 }
 
-.vyng {
-    background-image: url('/portfolio/vyng.png');
+.bridg {
+    background-image: url('/portfolio/bridg.svg');
+    background-size: 30%;
 }
 
-.spycloud {
-    background-image: url('/portfolio/spycloud.png');
+.branch {
+    background-image: url('/portfolio/branch.svg');
 }
 
-.sensorind {
-    background-image: url('/portfolio/sensor.png');
+.handiq {
+    background-image: url('/portfolio/handiq.png');
 }
 
-.covalence {
-    background-image: url('/portfolio/covalence.png');
-}
-
-.knoppbio {
-    background-image: url('/portfolio/knoppbio.png');
-}
-
-.pole3 {
-    background-image: url('/portfolio/thirdpole.png');
+.pdynamics {
+    background-image: url('/portfolio/pdynamics.png');
+    background-size: 75%;
 }

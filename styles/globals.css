@@ -40,6 +40,10 @@ section {
   min-height: 100vh;
 }
 
+.auto-height {
+  height: auto;
+}
+
 .auto-section {
   min-height: 50em;
   min-height: 100vh;
@@ -105,6 +109,12 @@ section {
 
 .bg-contain {
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-center {
+  background-size: 50%;
   background-repeat: no-repeat;
   background-position: center;
 }
