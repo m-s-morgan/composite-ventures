@@ -26,19 +26,51 @@ const slides = [
   }
 ];
 const sectionContainer = 's-contain h-full max-w-screen-xl mx-auto px-5 z-40 sm:px-6 lg:px-8';
-const advisors = [
+const team = [
   {
     name: 'Jim Armstrong',
-    pic: '/advisors/jimarmstrong.png',
-    bio: 'A successful and experienced venture investor across a variety of enterprise and consumer facing technology companies, Jim has established himself as a leading venture capitalist based in California. Jim focuses on investments with particular interest in SaaS delivered marketplaces and processes, consumer mobile technology and devices. On several occasions Forbes Magazine has recognized Jim on its "Midas List" as one of the top Venture Capitalists in the United States. Jim co-founded March Capital in 2014 and has been at Clearstone Venture Partners since 1998. Jim was a partner with idealab Capital Partners in the late 1990s and started his career at Austin Ventures in 1995. Jim led venture investments in PayPal, United Online, Internet Brands, Integrien, Branch and SpyCloud. Jim is involved in  the early formation of two successful Silicon Valley studios: The Hive (big data and machine learning) and The Fabric (cloud networking).\n\nJim is a former software programmer and financial expert, and holds a BA in Economics from the University of California at Los Angeles and an MBA from the McCombs School at the University of Texas at Austin.'
+    pic: '/team/jimarmstrong2.png',
+    title: 'Managing Director',
+    bio: 'A successful and experienced venture investor across a variety of enterprise and consumer facing technology companies, Jim has established himself as a leading venture capitalist based in California.\n\nJim focuses on investments with particular interest in SaaS delivered marketplaces and processes, consumer mobile technology and devices. On several occasions Forbes Magazine has recognized Jim on its "Midas List" as one of the top Venture Capitalists in the United States.\n\nJim co-founded March Capital in 2014 and has been at Clearstone Venture Partners since 1998. Jim was a partner with idealab Capital Partners in the late 1990s and started his career at Austin Ventures in 1995.\n\nJim led venture investments in PayPal, United Online, Internet Brands, Integrien, Branch and SpyCloud. Jim is involved in  the early formation of two successful Silicon Valley studios: The Hive (big data and machine learning) and The Fabric (cloud networking).\n\nJim is a former software programmer and financial expert, and holds a B.A. in Economics from the University of California at Los Angeles and an MBA from the McCombs School at the University of Texas at Austin.',
+    short: 'Venture Capitalist',
+    linkedin: 'https://www.linkedin.com/in/jim-armstrong-2a7702/',
   }, {
-    name: 'Jeff McCormick',
-    pic: '/advisors/jeffmccormick.png',
-    bio: 'Jeff founded Saturn in 1994 to finance early-stage growth companies. He spearheads Saturn\'s investigation into new areas of investment and is active in managing the firm\'s portfolio companies. Working closely with entrepreneurs, he helps forge strategic relationships, builds management teams and develops marketing and distribution strategies to enable significant growth. At Saturn, Jeff\'s areas of focus include advanced materials and healthcare technology. Some of his notable investments include Knopp Biosciences, Third Pole Therapeutics, BiOWiSH Technologies and Omaze.\n\nJeff\'s experience as an investment banker, entrepreneur and venture capitalist dates back to the early \'90s. Prior to founding Saturn, he worked as an analyst and investment banker with Bariston Associates, a Boston firm that originates and manages private investments for individual and institutional clients. Jeff earned his BS in Biology as well as his MBA in Finance from Syracuse University.'
+    name: 'Blaine Hurst',
+    pic: '/team/blainehurst.jpg',
+    title: 'Managing Director',
+    bio: 'Blaine Hurst is an entrepreneur, businessman, and restaurateur. Hurst served as  President and Chief Executive Officer of Panera following the chain\'s acquisition by JAB Holdings in July 2017 for roughly $7.5 billion, and served as its President since December 2016.\n\nBlain has nearly 25 years of restaurant experience from operating individual restaurants to leading two of the largest restaurants in the U.S.\n\nHurst previously served as President, Restaurant Technology Solutions LLC, a division of eMac Digital. eMac Digital was a joint venture of McDonald\'s Corporation, Accel Partners and KKR, and was chartered with building and deploying a new technology model for the restaurant industry.[10]\n\nBefore eMac, Hurst was Vice Chairman and President of Papa John\'s International Inc., one of the largest pizza chains in the world, after having held a series of executive roles including Executive Vice President, Chief Administrative Officer and Vice President, Information Services. He also helped lead the development and implementation of the first nationwide online food ordering system in 1998, as well as an in-store management and delivery system.  Earlier in his career, before joining Boston Chicken, now known as Boston Market, as its Vice President, Information Services, Hurst was a consulting division Partner with Ernst & Young, founding the firm\'s Center for Information Technology Planning and Development.',
+    short: 'Vice Chairman at Panera Bread; Board Member and Advisor',
+    linkedin: 'https://www.linkedin.com/in/blainehurst/',
   }, {
-    name: 'Jeff Parker',
-    pic: '/advisors/jeffparker.png',
-    bio: 'Mr. Parker has an extensive history of success as a serial entrepreneur, CEO and active investor in financial services companies over the past 40 years. He was named 2003 New England Entrepreneur of the Year by Ernst & Young in the Financial Services category. He currently serves as a board member or advisor to more than a dozen companies in New York, Boston and Salt Lake City. In 2010, Jeff was named to Inside Market Data\'s Hall of Fame. In 1980, Mr. Parker founded Technical Data Corporation, a provider of financial analytic services for the institutional investor community. In 1983, he founded First Call Corporation. In 1986, he sold both these businesses to the Canadian publishing giant International Thomson, now Thomson Reuters, and became Chairman and CEO of Thomson Financial, its financial services subsidiary.\n\nAfter serving as CEO of Thomson Financial, Mr. Parker co-founded 38 Newbury Ventures, a venture capital firm which focused on start-up and early stage companies. In 1997, Mr. Parker co-founded CCBN.com (Corporate Communications Broadcast Network), a leader in enabling direct on-line communications between public companies and the investment community. He served as CCBN\'s Chairman and CEO until the sale of the company to The Thomson Corporation in March 2004.\n\nMr. Parker is a Trustee Emeritus and a Presidential Counsellor at Cornell University where he founded the Parker Center for Investment Research at the Johnson School. Mr. Parker holds a Bachelor of Engineering, a Master of Engineering and an MBA all from Cornell University.'
+    name: 'Brandon Levine',
+    pic: '/team/brandonlevine.jpg',
+    title: 'Managing Director',
+    bio: 'Brandon brings 20 years of expertise launching new products and business models in the areas of supply chain, fintech, cloud strategy, logistics, AI, customer service and marketing technology to Composite Ventures.\n\nHis prior roles include Head of Innovation, Financial Services and Payments Strategy at Dollar General, a Co-founder of Openbucks (acquired by Paysafe Group) and  a Co-founder of Transaction-Labs (acquired by A&M Capital, Juna Capital).\n\nBrandon earned a BS in Microbiology and Chemistry from University of Miami and University of Westminster in London.\n\n',
+    short: 'Former Head of Innovation, Payments, Financial Services at Dollar General',
+    linkedin: 'https://www.linkedin.com/in/brandonlevine/',
+  }
+];
+const advisors = [
+  {
+    name: 'Don Kingsborough',
+    pic: '/team/donkingsborough.jpg',
+    bio: 'Kingsborough\'s 40-year career spans important executive and operating roles at the intersection of retail, stored value and technology. As the former founder and CEO of Blackhawk Network, he is commonly credited with pioneering the retail gift card market. Most recently, he is a member of the Board of Directors and the former CEO of OneMarket, an integrated retail platform for connecting offline and online shopping. He has also held important positions at PayPal, Westfield Corp. and is the former president of Atari\'s consumer business.',
+    linkedin: 'https://www.linkedin.com/in/donkingsborough/',
+  }, {
+    name: 'Matthew Schweickert',
+    pic: '/team/matthewschweickert.jpg',
+    bio: 'As former Head of the Strategic Business Development group, Matt Sckweickert managed The Home Depot\'s corporate strategy ranging from organic and inorganic strategic initiatives to M&A and ventures. In addition to being a member of Home Depot\'s Finance Executive Leadership Team, Matt also oversaw the I.T. Finance group and lead the strategic planning, financial reporting, and analysis for the company\'s enterprise I.T. spend. Before working with Home Depot on critical planning and execution, Matt had previous roles with Experian, JP Morgan Chase, Bank of America Securities, and the Harvard Center for International Development.',
+    linkedin: 'https://www.linkedin.com/in/mattschweickert/',
+  }, {
+    name: 'Neil Golden',
+    pic: '/team/neilgolden.jpg',
+    bio: 'Neil enjoyed a 24-year career with McDonald\'s; including his most recent position as Chief Marketing Officer (CMO) for McDonald\'s USA. In his six years as CMO, he played an active role on the leadership team resulting in record visitation, sales, profits, market-share, and stock valuation. Before his role at McDonald\'s, Golden held positions at Burger King and RC Cola. He also competed on the Men\'s International Professional Tennis Tour. He has served as a member of several boards including the Association of National Advertisers (ANA) -- including Chair of the ANA Government Relations Committee, the National Ad Council, and the Thurgood Marshall College Fund.  Neil is currently an active member of the faculty at Northwestern University\'s Medill School of Integrated Marketing Communications. He also serves as a director on boards for other public and private companies.',
+    linkedin: 'https://www.linkedin.com/in/neilbgolden/',
+  }, {
+    name: 'Jason Reiser',
+    pic: '/team/jasonreiser.jpg',
+    bio: 'With more than 30 years of retailing experience, Jason came to Dollar General as chief merchant in 2017 from The Vitamin Shoppe, where he was executive VP and COO. Before that, he served as chief merchandising officer of Family Dollar (now part of Dollar Tree) from 2013 to 2016. A trained pharmacist, Reiser began his retail career as a pharmacy manager at Walmart and then rose through the ranks at the company, serving as vice president of merchandising, health and family care for Sam\'s Club from 2010 to 2013.',
+    linkedin: 'https://www.linkedin.com/in/jason-reiser-6859837/',
   }
 ];
 
@@ -48,12 +80,13 @@ export default function Home() {
     email: '',
     company: '',
     message: '',
+    reason: 'Founders looking for funding and advice',
     loading: false,
     error: false,
     success: false,
   });
-  const onAdvisor = (index: number) => {
-    const advisor = advisors[index];
+  const onAdvisor = (index: number, secondary?: boolean) => {
+    const advisor = secondary === true ? advisors[index] : team[index];
 
     if (!advisor) {
       return;
@@ -67,6 +100,7 @@ export default function Home() {
       imageHeight: 300,
       imageAlt: advisor.name,
       confirmButtonText: 'Done',
+      confirmButtonColor: '#000',
       showClass: {
         popup: 'animate__animated animate__fadeIn animate__faster'
       },
@@ -76,7 +110,7 @@ export default function Home() {
     });
   };
 
-  const contactChanged = (ev?: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const contactChanged = (ev?: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const target = ev.target;
     const name = target.name;
 
@@ -119,6 +153,7 @@ export default function Home() {
         email: '',
         company: '',
         message: '',
+        reason: '',
         loading: false,
         error: false,
         success: true,
@@ -163,8 +198,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className={`${styles.thesisBorder} ${styles.thesisBorderLeft} w-36 xl:w-52 2xl:w-80 bg-cover hidden lg:block`}></div>
-          <div className={`${styles.thesisBorder} ${styles.thesisBorderRight} w-36 xl:w-52 2xl:w-80 bg-cover hidden lg:block`}></div>
+          <div className={`${styles.thesisBorder} ${styles.thesisBorderLeft} w-6 md:w-12 lg:w-36 xl:w-52 2xl:w-80 bg-cover`}></div>
+          <div className={`${styles.thesisBorder} ${styles.thesisBorderRight} w-6 md:w-12 lg:w-36 xl:w-52 2xl:w-80 bg-cover`}></div>
         </section>
         <section id="about">
           <div className={sectionContainer}>
@@ -184,8 +219,8 @@ export default function Home() {
         </section>
         <section id="portfolio" className="auto-height text-center">
           <div className="s-contain">
-            <div className="pt-24 md:pt-40">
-              <h2 className="text-3xl md:text-5xl mb-24">Our Portfolio</h2>
+            <div className="pt-24 md:pt-32">
+              <h2 className="text-4xl md:text-5xl mb-24">Our Portfolio</h2>
               <div className="grid md:grid-cols-2 w-full">
                 <a href="http://bridg.com/" target="_blank" className="block relative h-80 w-full border border-gray-500 bg-white border-l-0 border-r-0">
                   <div className={`${styles.bridg} bg-center h-full`}></div>
@@ -219,23 +254,45 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="team" className={`${styles.team} auto-section bg-cover bg-black text-white text-center`}>
+        <section id="team" className={`${styles.team} auto-height bg-cover bg-black text-white text-center`}>
           <div className="shroud shroud-heavy"></div>
-          <div className={`${sectionContainer} min-100vh`}>
+          <div className={`${sectionContainer} py-24`}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mt-5 mb-5 md:mt-0">Our Team</h2>
+            <p className="text-gray-300">With an exclusive focus on retail, restaurants and next-generation commerce technologies, we initiate investments into a pre-configured portfolio that includes indications of pre-money valuations and types of securities. The principals of the Fund, proven experts in their field, have done the hard work to assemble a group of private, growing and sector leading companies that will represent the future of retail technology.</p>
           </div>
         </section>
-        <section id="advisors" className={`${styles.advisors} auto-section bg-cover text-center`}>
-          <div className="shroud shroud-white"></div>
+        <section id="advisors" className={`${styles.advisors} auto-section text-center`}>
           <div className={`${sectionContainer} min-100vh`}>
-            <div className="h-full min-100vh flex flex-col items-center justify-center py-24 md:py-40">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-9">Advisors</h2>
+            <div className="h-full min-100vh flex flex-col items-center justify-center pt-16 pb-24 md:pt-28 md:pb-40">
               <div className="grid md:grid-cols-3 gap-2 px-5">
+                {
+                  team.map((t, i) => {
+                    return (
+                      <div key={i} className={`${styles.advisor} ${styles.clickable} mb-5 md:mb-0`} onClick={() => onAdvisor(i)}>
+                        <div className={`${styles.advisorPic} h-96 w-full bg-cover transition-all duration-500`} style={{ backgroundImage: `url(${t.pic})` }}></div>
+                        <h4 className="text-xl sm:text-2xl mt-3">{t.name}</h4>
+                        <h5 className="mt-1 text-gray-500">{t.title}</h5>
+                        <p className="mt-2 text-sm px-6">{t.short}... <span className="text-xs text-gray-500">Read more</span></p>
+                        <div className="mt-2 text-xs">
+                          <a className="linkedin" href={t.linkedin} title="LinkedIn" target="_blank" onClick={(e) => e.stopPropagation()}><img src="/misc/linkedin.svg" alt="LinkedIn" /></a>
+                        </div>
+                      </div>
+                    );
+                  })
+                }
+              </div>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-16 mb-9">Strategic Advisors</h2>
+              <div className="grid md:grid-cols-2 gap-2 px-5">
                 {
                   advisors.map((a, i) => {
                     return (
-                      <div key={i} className={`${styles.advisor} mb-5 md:mb-0`} onClick={() => onAdvisor(i)}>
-                        <div className={`${styles.advisorPic} h-96 w-80 max-w-100 bg-cover transition-all duration-500`} style={{ backgroundImage: `url(${a.pic})` }}></div>
-                        <h4 className="text-xl sm:text-2xl mt-3">{a.name}</h4>
+                      <div key={i} className={`${styles.advisor} ${styles.clickable} mb-5 md:mb-0 w-80 max-w-100`} onClick={() => onAdvisor(i, true)}>
+                        <div className={`${styles.advisorPic} h-96 w-full bg-cover transition-all duration-500`} style={{ backgroundImage: `url(${a.pic})` }}></div>
+                        <h4 className="text-lg sm:text-xl mt-2">{a.name}</h4>
+                        <p className="text-xs text-left mt-1">{a.bio.slice(0, 190)}... <span className="text-xs text-gray-500">Read more</span></p>
+                        <div className="mt-1 text-xs text-left">
+                          <a className="linkedin l-small" href={a.linkedin} title="LinkedIn" target="_blank" onClick={(e) => e.stopPropagation()}><img src="/misc/linkedin.svg" alt="LinkedIn" /></a>
+                        </div>
                       </div>
                     );
                   })
@@ -245,11 +302,18 @@ export default function Home() {
           </div>
         </section>
         <section id="contact" className={`${styles.contact} bg-cover bg-black text-center text-white`}>
-          <div className="shroud shroud-light"></div>
+          <div className="shroud shroud-xheavy"></div>
           <div className={sectionContainer}>
             <div className="h-full flex flex-col items-center justify-center pb-14">
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-9">Contact Us</h2>
               <form className={`${styles.form} max-w-full px-3`} onSubmit={formSubmit}>
+                <div className="mt-4">
+                  <select className="focus:ring-gray-200 focus:border-gray-200 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3 bg-black text-xs md:text-base" name="reason" onChange={contactChanged}>
+                    <option value="Founders looking for funding and advice">Founders looking for funding and advice</option>
+                    <option value="Founders from under-represented backgrounds">Founders from under-represented backgrounds</option>
+                    <option value="Corporate partners looking to connect">Corporate partners looking to connect</option>
+                  </select>
+                </div>
                 <div className="mt-4">
                   <input type="text" className="focus:ring-gray-200 focus:border-gray-200 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3 bg-black" name="name" placeholder="Name" value={contact.name} onChange={contactChanged} />
                 </div>
@@ -275,7 +339,7 @@ export default function Home() {
           </div>
           <footer className="absolute bg-black left-0 bottom-0 w-full z-50">
             <div className="max-w-screen-xl mx-auto h-16 px-2 sm:px-6 lg:px-8 flex items-center justify-between text-center text-white">
-              <img className="block lg:hidden h-12 w-auto" src="/logos/dark-mark-2.png" alt="Composite Ventures" />
+              <img className="block lg:hidden h-12 w-auto" src="/logos/mark-dark-2.png" alt="Composite Ventures" />
               <img className="hidden lg:block h-12 w-auto" src="/logos/logo-dark-2.png" alt="Composite Ventures" />
               <div className="text-xs">Copyright © 2021 Composite Ventures<br />All rights reserved</div>
               <a className="block" href="#top">

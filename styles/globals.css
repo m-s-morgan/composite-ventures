@@ -73,6 +73,10 @@ section {
   background-color: rgba(0,0,0,0.6);
 }
 
+.shroud-xheavy {
+  background-color: rgba(0,0,0,0.7);
+}
+
 .shroud-white {
   background-color: rgba(255,255,255,0.85);
 }
@@ -141,6 +145,19 @@ section {
 
 .no-resize {
   resize: none;
+}
+
+.linkedin {
+  display: inline-block;
+  width: 1.5em;
+}
+
+.linkedin.l-small {
+  width: 1em;
+}
+
+.linkedin img {
+  width: 100%;
 }
 
 * {

@@ -76,18 +76,14 @@
 }
 
 .team {
-    background-image: url('/backgrounds/space2.jpg');
-}
-
-.advisors {
-    background-image: url('/backgrounds/streak.jpg');
+    background-image: url('/backgrounds/background-8.jpg');
 }
 
 .contact {
-    background-image: url('/backgrounds/moon.jpg');
+    background-image: url('/backgrounds/background-7.jpg');
 }
 
-.advisor {
+.advisor.clickable {
     cursor: pointer;
 }
 
