@@ -131,6 +131,11 @@
     background-image: url('/portfolio/handiq.png');
 }
 
+.placerai {
+    background-image: url('/portfolio/placerai.png');
+    background-size: 45%;
+}
+
 .pdynamics {
     background-image: url('/portfolio/pdynamics.png');
     background-size: 75%;

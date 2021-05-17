@@ -208,7 +208,7 @@ export default function Home() {
                 <img className="w-full" src="/backgrounds/background-9.jpg" alt="About Us" />
               </div>
               <div>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mt-5 mb-5 md:mt-0">A unique type of venture fund</h2>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mt-5 mb-5 md:mt-0">Defined Investment Venture Fund (DIVF)</h2>
                 <p className="text-gray-500">With an exclusive focus on retail, restaurants and next-generation commerce technologies, we initiate investments into a pre-configured portfolio that includes indications of pre-money valuations and types of securities. The principals of the Fund, proven experts in their field, have done the hard work to assemble a group of private, growing and sector leading companies that will represent the future of retail technology.</p>
               </div>
             </div>
@@ -236,18 +236,18 @@ export default function Home() {
                     <p className="text-sm">Changing the way employees get paid, and the way they think about banking</p>
                   </div>
                 </a>
-                <a href="https://handiq.com/" target="_blank" className="block relative h-80 w-full border border-gray-500 bg-white border-t-0 border-r-0 border-l-0 md:border-b-0">
-                  <div className={`${styles.handiq} bg-center h-full`}></div>
+                <a href="https://www.placer.ai/" target="_blank" className="block relative h-80 w-full border border-gray-500 bg-white border-t-0 border-r-0 border-l-0 md:border-b-0">
+                  <div className={`${styles.placerai} bg-center h-full`}></div>
                   <div className={`${styles.appear} text-white opacity-0 transition-opacity duration-500 hover:opacity-100 flex flex-col justify-center items-center`}>
-                    <h3 className="text-xl font-bold mb-5">HANDIQ</h3>
-                    <p className="text-sm">Verified hygiene at every location</p>
+                    <h3 className="text-xl font-bold mb-5">Placer.ai</h3>
+                    <p className="text-sm">Providing retailers with actionable insights and location analytics into their audience and competition</p>
                   </div>
                 </a>
                 <a href="https://www.privacydynamics.io/" target="_blank" className="block relative h-80 w-full border border-gray-500 bg-white border-t-0 border-r-0 border-l-0 border-b-0 md:border-l">
                   <div className={`${styles.pdynamics} bg-center h-full`}></div>
                   <div className={`${styles.appear} text-white text-white opacity-0 transition-opacity duration-500 hover:opacity-100 flex flex-col justify-center items-center`}>
                     <h3 className="text-xl font-bold mb-5">PRIVACY DYNAMICS</h3>
-                    <p className="text-sm">Making sure the companies you work with keep your data private</p>
+                    <p className="text-sm">Protecting the future of personal data by providing no-code data privacy tools built for today's analytics engineers</p>
                   </div>
                 </a>
               </div>
@@ -257,8 +257,8 @@ export default function Home() {
         <section id="team" className={`${styles.team} auto-height bg-cover bg-black text-white text-center`}>
           <div className="shroud shroud-heavy"></div>
           <div className={`${sectionContainer} py-24`}>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mt-5 mb-5 md:mt-0">Our Team</h2>
-            <p className="text-gray-300">With an exclusive focus on retail, restaurants and next-generation commerce technologies, we initiate investments into a pre-configured portfolio that includes indications of pre-money valuations and types of securities. The principals of the Fund, proven experts in their field, have done the hard work to assemble a group of private, growing and sector leading companies that will represent the future of retail technology.</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl mt-5 mb-5 md:mt-0">Industry-Focused Team</h2>
+            <p className="text-gray-300">The Composite team consists of highly recognized venture professionals, retail industry executives known for their innovative successes as well as a group of highly incentivized advisors pulled from leaders in retail. We are able to intelligently fathom market leaders in our focus sector, gain access to those investments and help our portfolio companies with our deep industry network.</p>
           </div>
         </section>
         <section id="advisors" className={`${styles.advisors} auto-section text-center`}>
@@ -310,7 +310,6 @@ export default function Home() {
                 <div className="mt-4">
                   <select className="focus:ring-gray-200 focus:border-gray-200 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3 bg-black text-xs md:text-base" name="reason" onChange={contactChanged}>
                     <option value="Founders looking for funding and advice">Founders looking for funding and advice</option>
-                    <option value="Founders from under-represented backgrounds">Founders from under-represented backgrounds</option>
                     <option value="Corporate partners looking to connect">Corporate partners looking to connect</option>
                   </select>
                 </div>
@@ -341,7 +340,7 @@ export default function Home() {
             <div className="max-w-screen-xl mx-auto h-16 px-2 sm:px-6 lg:px-8 flex items-center justify-between text-center text-white">
               <img className="block lg:hidden h-12 w-auto" src="/logos/mark-dark-2.png" alt="Composite Ventures" />
               <img className="hidden lg:block h-12 w-auto" src="/logos/logo-dark-2.png" alt="Composite Ventures" />
-              <div className="text-xs">Copyright © 2021 Composite Ventures<br />All rights reserved</div>
+              <div className="text-xs mr-4 lg:mr-40">Copyright © 2021 Composite Ventures<br />All rights reserved</div>
               <a className="block" href="#top">
                 <img className="h-6" src="/misc/uparrow_light.png" alt="Top" />
               </a>
