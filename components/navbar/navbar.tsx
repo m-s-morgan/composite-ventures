@@ -33,9 +33,10 @@ export default function Navbar() {
                             </a>
                         </div>
                         <div className="hidden sm:block sm:ml-6">
-                            <div className="flex space-x-4 pt-3">
+                            <div className="flex space-x-0 md:space-x-4 pt-3">
                                 <a href="#thesis" className="text-gray-300 hover:underline hover:text-white px-3 py-5 rounded-md text-sm font-medium">Mission</a>
                                 <a href="#about" className="text-gray-300 hover:underline hover:text-white px-3 py-5 rounded-md text-sm font-medium">About Us</a>
+                                <a href="#approach" className="text-gray-300 hover:underline hover:text-white px-3 py-5 rounded-md text-sm font-medium">Approach</a>
                                 <a href="#portfolio" className="text-gray-300 hover:underline hover:text-white px-3 py-5 rounded-md text-sm font-medium">Portfolio</a>
                                 <a href="#team" className="text-gray-300 hover:underline hover:text-white px-3 py-5 rounded-md text-sm font-medium">Team</a>
                                 <a href="#contact" className="text-gray-300 hover:underline hover:text-white px-3 py-5 rounded-md text-sm font-medium">Contact</a>
@@ -48,6 +49,7 @@ export default function Navbar() {
                 <div className="px-2 pt-2 pb-3 space-y-1">
                     <a href="#thesis" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onClick={() => toggleMenu(false)}>Mission</a>
                     <a href="#about" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onClick={() => toggleMenu(false)}>About Us</a>
+                    <a href="#approach" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onClick={() => toggleMenu(false)}>Approach</a>
                     <a href="#portfolio" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onClick={() => toggleMenu(false)}>Portfolio</a>
                     <a href="#team" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onClick={() => toggleMenu(false)}>Team</a>
                     <a href="#contact" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onClick={() => toggleMenu(false)}>Contact</a>

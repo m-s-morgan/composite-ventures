@@ -242,6 +242,9 @@ export default function Home() {
           <div className="h-block bg-gray-100"></div>
           <div className="t-block bg-gray-100"></div>
         </section>
+        <section id="approach">
+
+        </section>
         <section id="portfolio" className="auto-height text-center">
           <div className="s-contain">
             <div>
