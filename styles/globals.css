@@ -143,6 +143,16 @@ section {
   height: 100%;
 }
 
+.acq {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.85);
+  color: white;
+  text-align: center;
+  padding: 0.5em;
+}
+
 .no-resize {
   resize: none;
 }

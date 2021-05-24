@@ -60,6 +60,14 @@
     background: linear-gradient(to right, rgba(255,255,255,0.5), white, rgba(255,255,255,0.5));
 }
 
+.borderLeft {
+    left: 0;
+}
+
+.borderRight {
+    right: 0;
+}
+
 .thesisBorder {
     position: absolute;
     top: 0;
@@ -67,12 +75,20 @@
     background-image: url('/backgrounds/pattern-1.jpg');
 }
 
-.thesisBorderLeft {
-    left: 0;
+.portfolioBorder {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-image: url('/backgrounds/pattern-2.jpg');
 }
 
-.thesisBorderRight {
-    right: 0;
+.portfolio {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: url('/backgrounds/pattern-4.jpg');
 }
 
 .team {
@@ -83,16 +99,16 @@
     background-image: url('/backgrounds/background-7.jpg');
 }
 
-.advisor.clickable {
-    cursor: pointer;
-}
-
 .teamPic {
     filter: grayscale(100%);
 }
 
 .teamPic:hover {
     filter: none;
+}
+
+.advisor.clickable {
+    cursor: pointer;
 }
 
 .advisor .advisorPic {
