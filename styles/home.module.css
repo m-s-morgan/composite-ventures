@@ -82,6 +82,46 @@
     background-image: url('/backgrounds/pattern-2.jpg');
 }
 
+.approach {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: url('/backgrounds/pattern-2.jpg');
+    background-position: left;
+}
+
+.process {
+    min-height: 20em;
+    background-image: url('/backgrounds/ai-2.jpg');
+}
+
+.iconContain {
+    position: absolute;
+    left: 0;
+    width: 3em;
+    height: 3em;
+    padding: 0.75em;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: rgb(30,63,152);
+}
+
+.list {
+    max-width: 30em;
+}
+
+.listItem {
+    padding-left: 4em;
+    position: relative;
+}
+
+.listIcon {
+    width: 1.5em;
+    margin: 0 auto;
+}
+
 .portfolio {
     position: absolute;
     width: 100%;

@@ -242,8 +242,44 @@ export default function Home() {
           <div className="h-block bg-gray-100"></div>
           <div className="t-block bg-gray-100"></div>
         </section>
-        <section id="approach">
-
+        <section id="approach" className="auto-section">
+          <div className="s-contain">
+              <div className="h-80 relative">
+                <div className={`${styles.approach} bg-cover`}></div>
+                <div className={`${sectionContainer} relative pt-14 md:pt-24 z-10 text-white text-center`}>
+                  <h2 className="text-4xl md:text-5xl relative z-10">Our Approach</h2>
+                  <p className="text-gray-300 mt-7 md:px-12 lg:text-xl">We are redefining the venture model of the past. By taking an investor centric approach with a focus on retail technology, our unique business model allows our investments to be placed into a known, pre-configured portfolio.</p>
+                </div>
+              </div>
+              <div className="grid md:grid-cols-2 w-full">
+                <div className={`${styles.process} bg-cover`}></div>
+                <div className="pt-8 pb-12 px-12 md:pt-12">
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-5 mb-5 md:mt-0 font-semibold">The Process</h2>
+                  <p className="text-gray-500 text-sm">We believe our format is the future of private venture investing; a model designed for attentive portfolio assembly alongside sector experts, with no focus on "empire" building. Instead, we have directed our efforts to portfolio construction and companies led by exceptional entrepreneurs with strong advisory boards and post product-market fitness.</p>
+                  <p className="mt-5 text-sm md:text-lg">By combining industry experience and knowledge, we work hands-on with our advisors to identify:</p>
+                  <ul className={styles.list}>
+                    <li className={`${styles.listItem} leading-none py-6`}>
+                      <div className={`${styles.iconContain} top-2`}>
+                        <img className={styles.listIcon} src="/icons/rocket.svg" alt="" />
+                      </div>
+                      <span className="text-base leading-3">The most important trends</span>
+                    </li>
+                    <li className={`${styles.listItem} leading-none pt-4 pb-5`}>
+                      <div className={`${styles.iconContain} top-5 md:top-2`}>
+                        <img className={styles.listIcon} src="/icons/company.svg" alt="" />
+                      </div>
+                      <span className="text-base leading-3">The emerging private companies that will be next-generation leaders in retail technology</span>
+                    </li>
+                    <li className={`${styles.listItem} leading-none py-6`}>
+                      <div className={`${styles.iconContain} top-4 md:top-2`}>
+                        <img className={styles.listIcon} src="/icons/user.svg" alt="" />
+                      </div>
+                      <span className="text-base leading-3">The most thoughtful and dynamic entrepreneurs</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
         </section>
         <section id="portfolio" className="auto-height text-center">
           <div className="s-contain">
