@@ -40,6 +40,11 @@ section {
   min-height: 100vh;
 }
 
+.text-2p5xl {
+  font-size: 1.75rem;
+  line-height: 2.1rem;
+}
+
 .auto-height {
   height: auto;
 }

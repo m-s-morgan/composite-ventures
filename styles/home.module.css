@@ -97,6 +97,16 @@
     background-image: url('/backgrounds/ai-2.jpg');
 }
 
+.iStrategy {
+    min-height: 20em;
+    background-image: url('/backgrounds/ai-3.jpg');
+}
+
+.keyThemes {
+    min-height: 20em;
+    background-image: url('/backgrounds/background-10.jpg');
+}
+
 .iconContain {
     position: absolute;
     left: 0;

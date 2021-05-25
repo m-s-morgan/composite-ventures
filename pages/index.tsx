@@ -244,17 +244,17 @@ export default function Home() {
         </section>
         <section id="approach" className="auto-section">
           <div className="s-contain">
-              <div className="h-80 relative">
+              <div className="h-96 relative">
                 <div className={`${styles.approach} bg-cover`}></div>
-                <div className={`${sectionContainer} relative pt-14 md:pt-24 z-10 text-white text-center`}>
+                <div className={`${sectionContainer} relative pt-20 md:pt-32 z-10 text-white text-center`}>
                   <h2 className="text-4xl md:text-5xl relative z-10">Our Approach</h2>
                   <p className="text-gray-300 mt-7 md:px-12 lg:text-xl">We are redefining the venture model of the past. By taking an investor centric approach with a focus on retail technology, our unique business model allows our investments to be placed into a known, pre-configured portfolio.</p>
                 </div>
               </div>
               <div className="grid md:grid-cols-2 w-full">
                 <div className={`${styles.process} bg-cover`}></div>
-                <div className="pt-8 pb-12 px-12 md:pt-12">
-                  <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-5 mb-5 md:mt-0 font-semibold">The Process</h2>
+                <div className="pt-8 pb-14 px-12 md:pt-20 md:pb-20">
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl mt-5 mb-5 md:mt-0 font-semibold">The Process</h2>
                   <p className="text-gray-500 text-sm">We believe our format is the future of private venture investing; a model designed for attentive portfolio assembly alongside sector experts, with no focus on "empire" building. Instead, we have directed our efforts to portfolio construction and companies led by exceptional entrepreneurs with strong advisory boards and post product-market fitness.</p>
                   <p className="mt-5 text-sm md:text-lg">By combining industry experience and knowledge, we work hands-on with our advisors to identify:</p>
                   <ul className={styles.list}>
@@ -275,6 +275,54 @@ export default function Home() {
                         <img className={styles.listIcon} src="/icons/user.svg" alt="" />
                       </div>
                       <span className="text-base leading-3">The most thoughtful and dynamic entrepreneurs</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="grid md:grid-cols-2 w-full">
+                <div className={`${styles.iStrategy} bg-cover md:col-start-2`}></div>
+                <div className="pt-8 pb-14 px-12 md:pt-20 md:pb-20 md:row-start-1">
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl mt-5 mb-5 md:mt-0 font-semibold">Investment Strategy</h2>
+                  <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl mt-5 mb-5 md:mt-0">We build relationships for future investment</h2>
+                  <p className="text-gray-500 text-sm">The portfolio and strategy of our retail technology fund stands out and entrepreneurs in this sector want us on their capitalization table. We have gathered a winning team that can be aggressive on terms and structure, including taking control of positions for added value.</p>
+                  <div className="grid lg:grid-cols-2 text-center mt-7">
+                    <div className="text-sm p-8 border border-gray-500">Our industry connections allow us to elevate and enhance scaling portfolio companies within our sector</div>
+                    <div className="text-sm p-8 border border-gray-500 border-t-0 lg:border-t lg:border-l-0">Our focus on IRR and fast liquidity lets entrepreneurs and legacy boards know that we can add value without dictating a "one size fits all" exit</div>
+                    <div className="text-sm p-8 border border-gray-500 border-t-0">We invest in dynamic entrepreneurs building "on theme" companies</div>
+                    <div className="text-sm p-8 border border-gray-500 lg:border-l-0 border-t-0">Recruitment of value added team members within the portfolio</div>
+                  </div>
+                </div>
+              </div>
+              <div className="grid md:grid-cols-2 w-full">
+                <div className={`${styles.keyThemes} bg-cover`}></div>
+                <div className="pt-8 pb-14 px-12 md:pt-20 md:pb-20">
+                  <h2 className="text-2p5xl sm:text-3xl md:text-4xl lg:text-5xl mt-5 mb-3 md:mb-4 md:mt-0 font-semibold">Key Themes in Retail</h2>
+                  <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-5 md:mb-9">Massive Disruption Taking Place</h2>
+                  <ul className={styles.list}>
+                    <li className={`${styles.listItem} leading-none py-6`}>
+                      <div className={`${styles.iconContain} top-4`}>
+                        <img className={styles.listIcon} src="/icons/analytics.svg" alt="" />
+                      </div>
+                      <div className="text-base leading-3 font-semibold mb-1">Next-Generation Analytics</div>
+                      <div className="text-xs leading-3">Extreme personalization</div>
+                      <div className="text-xs leading-3">Context targeted marketing</div>
+                    </li>
+                    <li className={`${styles.listItem} leading-none pt-4 pb-5`}>
+                      <div className={`${styles.iconContain} top-4`}>
+                        <img className={styles.listIcon} src="/icons/wifi.svg" alt="" />
+                      </div>
+                      <div className="text-base leading-3 font-semibold mb-1">Automation of Retail</div>
+                      <div className="text-xs leading-3">No-friction commerce at the edge</div>
+                      <div className="text-xs leading-3">Alternate checkout</div>
+                      <div className="text-xs leading-3">New store formats</div>
+                    </li>
+                    <li className={`${styles.listItem} leading-none py-6`}>
+                      <div className={`${styles.iconContain} top-4`}>
+                        <img className={styles.listIcon} src="/icons/payments.svg" alt="" />
+                      </div>
+                      <div className="text-base leading-3 font-semibold mb-1">Payments</div>
+                      <div className="text-xs leading-3">Employee financial wellness</div>
+                      <div className="text-xs leading-3">Frictionless payments</div>
                     </li>
                   </ul>
                 </div>
