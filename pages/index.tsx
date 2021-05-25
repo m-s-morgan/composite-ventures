@@ -430,7 +430,7 @@ export default function Home() {
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-9">Contact Us</h2>
               <form className={`${styles.form} max-w-full px-3`} onSubmit={formSubmit}>
                 <div className="mt-4">
-                  <select className="focus:ring-gray-200 focus:border-gray-200 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3 bg-black text-xs md:text-base" name="reason" onChange={contactChanged}>
+                  <select className="focus:ring-gray-200 focus:border-gray-200 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md p-3 bg-black text-xs md:text-base appearance-none" name="reason" onChange={contactChanged}>
                     <option value="Founders looking for funding and advice">Founders looking for funding and advice</option>
                     <option value="Corporate partners looking to connect">Corporate partners looking to connect</option>
                   </select>
