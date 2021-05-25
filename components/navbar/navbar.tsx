@@ -45,7 +45,7 @@ export default function Navbar() {
                     </div>
                 </div>
             </div>
-            <div className={`${menu ? 'h-60' : 'h-0'} overflow-hidden transition-all duration-500 sm:hidden`}>
+            <div className={`${menu ? 'h-72' : 'h-0'} overflow-hidden transition-all duration-500 sm:hidden`}>
                 <div className="px-2 pt-2 pb-3 space-y-1">
                     <a href="#thesis" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onClick={() => toggleMenu(false)}>Mission</a>
                     <a href="#about" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" onClick={() => toggleMenu(false)}>About Us</a>

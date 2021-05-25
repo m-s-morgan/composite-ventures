@@ -122,7 +122,7 @@ export default function Home() {
       title: advisor.name,
       html: marked(advisor.bio),
       imageUrl: advisor.pic,
-      imageHeight: 300,
+      imageHeight: 'auto',
       imageAlt: advisor.name,
       confirmButtonText: 'Done',
       confirmButtonColor: '#000',
