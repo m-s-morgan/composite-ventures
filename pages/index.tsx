@@ -282,21 +282,21 @@ export default function Home() {
               <div className="grid md:grid-cols-2 w-full">
                 <div className={`${styles.iStrategy} bg-cover md:col-start-2`}></div>
                 <div className="pt-8 pb-14 px-12 md:pt-20 md:pb-20 md:row-start-1">
-                  <h2 className="text-3xl md:text-4xl lg:text-5xl mt-5 mb-5 md:mt-0 font-semibold">Investment Strategy</h2>
-                  <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl mt-5 mb-5 md:mt-0">We build relationships for future investment</h2>
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl mt-5 mb-1 md:mt-0 font-semibold">Investment Strategy</h2>
+                  <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-5">We build relationships for future investment</h2>
                   <p className="text-gray-500 text-sm">The portfolio and strategy of our retail technology fund stands out and entrepreneurs in this sector want us on their capitalization table. We have gathered a winning team that can be aggressive on terms and structure, including taking control of positions for added value.</p>
                   <div className="grid lg:grid-cols-2 text-center mt-7">
-                    <div className="text-sm p-8 border border-gray-500">Our industry connections allow us to elevate and enhance scaling portfolio companies within our sector</div>
-                    <div className="text-sm p-8 border border-gray-500 border-t-0 lg:border-t lg:border-l-0">Our focus on IRR and fast liquidity lets entrepreneurs and legacy boards know that we can add value without dictating a "one size fits all" exit</div>
-                    <div className="text-sm p-8 border border-gray-500 border-t-0">We invest in dynamic entrepreneurs building "on theme" companies</div>
-                    <div className="text-sm p-8 border border-gray-500 lg:border-l-0 border-t-0">Recruitment of value added team members within the portfolio</div>
+                    <div className="text-sm p-8 border-gray-500 border-2">Our industry connections allow us to elevate and enhance scaling portfolio companies within our sector</div>
+                    <div className="text-sm p-8 border-gray-500 border-2 border-t-0 lg:border-t-2 lg:border-l-0">Our focus on IRR and fast liquidity lets entrepreneurs and legacy boards know that we can add value without dictating a "one size fits all" exit</div>
+                    <div className="text-sm p-8 border-gray-500 border-2 border-t-0">We invest in dynamic entrepreneurs building "on theme" companies</div>
+                    <div className="text-sm p-8 border-gray-500 border-2 lg:border-l-0 border-t-0">Recruitment of value added team members within the portfolio</div>
                   </div>
                 </div>
               </div>
               <div className="grid md:grid-cols-2 w-full">
                 <div className={`${styles.keyThemes} bg-cover`}></div>
                 <div className="pt-8 pb-14 px-12 md:pt-20 md:pb-20">
-                  <h2 className="text-2p5xl sm:text-3xl md:text-4xl lg:text-5xl mt-5 mb-3 md:mb-4 md:mt-0 font-semibold">Key Themes in Retail</h2>
+                  <h2 className="text-2p5xl sm:text-3xl md:text-4xl lg:text-5xl mt-5 mb-1 md:mt-0 font-semibold">Key Themes in Retail</h2>
                   <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-5 md:mb-9">Massive Disruption Taking Place</h2>
                   <ul className={styles.list}>
                     <li className={`${styles.listItem} leading-none py-6`}>
