@@ -217,6 +217,10 @@ section {
   max-height: 95vh;
 }
 
+.swal2-image {
+  min-height: 12em;
+}
+
 .swal2-content {
   max-height: 10em;
   max-height: 30vh;

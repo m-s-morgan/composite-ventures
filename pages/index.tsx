@@ -44,7 +44,7 @@ const team = {
       linkedin: 'https://www.linkedin.com/in/blainehurst/',
     }, {
       name: 'Brandon Levine',
-      pic: '/team/brandonlevine.png',
+      pic: '/team/brandonlevine2.jpg',
       title: 'Managing Director',
       bio: 'Brandon brings 20 years of expertise launching new products and business models in the areas of supply chain, fintech, cloud strategy, logistics, AI, customer service and marketing technology to Composite Ventures.\n\nHis prior roles include Head of Innovation, Financial Services and Payments Strategy at Dollar General, a Co-founder of Openbucks (acquired by Paysafe Group) and  a Co-founder of Transaction-Labs (acquired by A&M Capital, Juna Capital).\n\nBrandon earned a BS in Microbiology and Chemistry from University of Miami and University of Westminster in London.\n\n',
       short: 'Former Head of Innovation, Payments, Financial Services at Dollar General',
@@ -387,8 +387,8 @@ export default function Home() {
                 {
                   team.main.map((t, i) => {
                     return (
-                      <div key={i} className={`${styles.advisor} ${styles.clickable} mb-5 md:mb-0`} onClick={() => onAdvisor(i, team.main)}>
-                        <div className={`${styles.advisorPic} h-96 w-full bg-cover transition-all duration-500`} style={{ backgroundImage: `url(${t.pic})` }}></div>
+                      <div key={`team-${i}`} className={`${styles.advisor} ${styles.clickable} mb-5 md:mb-0 w-64 max-w-100`} onClick={() => onAdvisor(i, team.main)}>
+                        <div className={`${styles.advisorPic} h-72 w-full bg-cover transition-all duration-500`} style={{ backgroundImage: `url(${t.pic})` }}></div>
                         <h4 className="text-xl sm:text-2xl mt-3">{t.name}</h4>
                         <h5 className="mt-1 text-gray-500">{t.title}</h5>
                         <p className="mt-1 text-sm px-6">{t.short}</p>
@@ -407,8 +407,8 @@ export default function Home() {
                 {
                   team.advisors.map((a, i) => {
                     return (
-                      <div key={i} className={`${styles.advisor} ${styles.clickable} mb-5 md:mb-0 w-80 max-w-100`} onClick={() => onAdvisor(i, team.advisors)}>
-                        <div className={`${styles.advisorPic} h-96 w-full bg-cover transition-all duration-500`} style={{ backgroundImage: `url(${a.pic})` }}></div>
+                      <div key={`advisor-${i}`} className={`${styles.advisor} ${styles.clickable} mb-5 md:mb-0 w-64 max-w-100`} onClick={() => onAdvisor(i, team.advisors)}>
+                        <div className={`${styles.advisorPic} h-72 w-full bg-cover transition-all duration-500`} style={{ backgroundImage: `url(${a.pic})` }}></div>
                         <h4 className="text-lg sm:text-xl mt-2">{a.name}</h4>
                         <h5 className="mt-1 text-sm text-gray-500">{a.title}</h5>
                         <div className="text-xs text-gray-500">Read more</div>
