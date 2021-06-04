@@ -238,3 +238,13 @@ section {
     font-size: 18px;
   }
 }
+
+@media (min-width: 768px) {
+  .min-h-5 {
+    min-height: 5em;
+  }
+
+  .min-h-4 {
+    min-height: 4em;
+  }
+}
