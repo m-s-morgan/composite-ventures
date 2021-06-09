@@ -193,6 +193,11 @@
     background-image: url('/portfolio/branch.svg');
 }
 
+.herotm {
+    background-image: url('/portfolio/hero.png');
+    background-size: 30%;
+}
+
 .handiq {
     background-image: url('/portfolio/handiq.png');
 }
