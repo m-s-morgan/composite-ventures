@@ -98,6 +98,38 @@ const team = {
   ]
 };
 
+const news = [{
+  title: 'Cardlytics Completes Acquisition of Bridg',
+  body: 'Cardlytics (NASDAQ: CDLX), one of the largest digital advertising platforms, announced today the completion of its acquisition of Bridg, a customer data platform...',
+  date: 'May 2021',
+  link: 'https://ir.cardlytics.com/news-releases/news-release-details/cardlytics-completes-acquisition-bridg'
+}, {
+  title: 'Placer.ai Raises $50M Series B',
+  body: 'Placer.ai, a leader in location analytics and foot traffic data, announced on Tuesday the close of a $50 million series B funding round...',
+  date: 'April 2021',
+  link: 'https://www.calcalistech.com/ctech/articles/0,7340,L-3906403,00.html'
+}, {
+  title: 'Market Performance Group Taps Jason Reiser for New Role',
+  body: 'Market Performance Group (MPG) has named Jason Reiser, former chief merchandising officer of Dollar General...',
+  date: 'March 2021',
+  link: 'https://www.chaindrugreview.com/market-performance-group-taps-jason-reiser-for-new-role/'
+}, {
+  title: 'Panera\'s Blaine Hurst Talks Restaurant Experience in a Tech-forward Future',
+  body: 'In this talk, Hurst shares his vision for the future of restaurants, noting that experience and hospitality still comes first...',
+  date: 'March 2021',
+  link: 'https://www.paytronix.com/blog/px-think-beyond-paneras-blaine-hurst-talks-restaurant-experience-in-a-tech-forward-future/'
+}, {
+  title: 'Branch Launches Employer Payments Platform for Businesses to Accelerate Payments',
+  body: 'Branch today announced the launch of its Employer Payments Platform (EPP) to help businesses accelerate payments...',
+  date: 'January 2021',
+  link: 'https://www.businesswire.com/news/home/20210126005995/en/Branch-Launches-Employer-Payments-Platform-for-Businesses-to-Accelerate-Payments'
+}, {
+  title: 'Panera CEO Blaine Hurst Talks the Company\'s New Breakfast Strategy',
+  body: 'Panera CEO Blaine Hurst sits down for an exclusive interview with CNBC’s "Closing Bell" to discuss the company\'s new breakfast strategy...',
+  date: 'April 2019',
+  link: 'https://www.cnbc.com/video/2019/04/15/panera-ceo-blaine-hurst-talks-the-companys-new-breakfast-strategy.html'
+}];
+
 export default function Home() {
   const onAdvisor = (index: number, arr: any[]) => {
     const advisor = arr[index];
@@ -352,12 +384,28 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="news" className={`${styles.news} bg-cover bg-black text-center text-white`}>
+        <section id="news" className={`${styles.news} auto-section bg-cover bg-black text-white`}>
           <div className="shroud shroud-xheavy"></div>
           <div className={sectionContainer}>
-            <div className="h-full flex flex-col items-center justify-center pb-14">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-9">Composite News</h2>
-
+            <div className="h-full flex flex-col items-center justify-center pt-16 pb-24 md:pt-28 md:pb-40">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-16">Composite News</h2>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-2 px-5">
+                {
+                  news.map((n, i) => {
+                    return (
+                      <a key={`news-${i}`} href={n.link} className={`${styles.newsItem} block mb-5 md:mb-0 lg:w-80 xl:w-96 max-w-100 pl-12 pr-12 pt-12 pb-20 relative`} target="_blank">
+                        <div className="absolute top-0 left-0 w-full h-full transition-opacity opacity-50 duration-500 bg-black z-10"></div>
+                        <div className="relative z-20">
+                          <div className="text-xs text-gray-500">{n.date}</div>
+                          <h5 className="mt-9 text-white">{n.title}</h5>
+                          <p className="mt-5 text-sm text-gray-500">{n.body}</p>
+                        </div>
+                        <div className="text-xs text-white z-20 absolute bottom-5">Read more &rarr;</div>
+                      </a>
+                    );
+                  })
+                }
+              </div>
             </div>
           </div>
           <footer className="absolute bg-black left-0 bottom-0 w-full z-50">

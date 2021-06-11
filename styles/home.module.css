@@ -149,6 +149,10 @@
     background-image: url('/backgrounds/background-7.jpg');
 }
 
+.newsItem:hover div:first-child {
+    opacity: 1;
+}
+
 .teamPic {
     filter: grayscale(100%);
 }
