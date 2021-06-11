@@ -13,7 +13,7 @@ export default function Slider(props: ISliderProps) {
         slidesToScroll: 1,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 3500,
         pauseOnHover: false,
     };
 
