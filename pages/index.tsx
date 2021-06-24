@@ -114,7 +114,7 @@ const news = [{
   date: 'March 2021',
   link: 'https://www.chaindrugreview.com/market-performance-group-taps-jason-reiser-for-new-role/'
 }, {
-  title: 'Panera\'s Blaine Hurst Talks Restaurant Experience in a Tech-forward Future',
+  title: 'Blaine Hurst Talks Restaurant Experience in a Tech-forward Future',
   body: 'In this talk, Hurst shares his vision for the future of restaurants, noting that experience and hospitality still comes first...',
   date: 'March 2021',
   link: 'https://www.paytronix.com/blog/px-think-beyond-paneras-blaine-hurst-talks-restaurant-experience-in-a-tech-forward-future/'
@@ -124,10 +124,10 @@ const news = [{
   date: 'January 2021',
   link: 'https://www.businesswire.com/news/home/20210126005995/en/Branch-Launches-Employer-Payments-Platform-for-Businesses-to-Accelerate-Payments'
 }, {
-  title: 'Panera CEO Blaine Hurst Talks the Company\'s New Breakfast Strategy',
-  body: 'Panera CEO Blaine Hurst sits down for an exclusive interview with CNBC’s "Closing Bell" to discuss the company\'s new breakfast strategy...',
-  date: 'April 2019',
-  link: 'https://www.cnbc.com/video/2019/04/15/panera-ceo-blaine-hurst-talks-the-companys-new-breakfast-strategy.html'
+  title: 'Technology and Real Estate Must Blend Together',
+  body: 'Technology and real estate must blend together better today in order to support an evolving retail market...',
+  date: 'March 2018',
+  link: 'https://www.cnbc.com/2018/03/19/technology-and-real-estate-must-blend-together-mega-mall-owner-says.html'
 }];
 
 export default function Home() {
