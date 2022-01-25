@@ -211,7 +211,14 @@
     background-size: 45%;
 }
 
-.pdynamics {
-    background-image: url('/portfolio/pdynamics.png');
-    background-size: 75%;
+.grubmarket {
+    background-image: url('/portfolio/grubmarket.png');
+}
+
+.opencity {
+    background-image: url('/portfolio/opencity.png');
+}
+
+.productscience {
+    background-image: url('/portfolio/productscience.png');
 }

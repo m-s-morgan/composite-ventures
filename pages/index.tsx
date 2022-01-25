@@ -94,11 +94,37 @@ const team = {
       title: 'Former CTO at Ebay; Former CIO at Oracle; Former CIO at SAP',
       bio: 'Tom Fisher joined Oracle in June, 2011 as the CIO for Oracle\'s Cloud Services organization. Tom is responsible for Oracle\'s Cloud Services delivery worldwide. Responsibilities include global Cloud Delivery of Oracle\'s Private Cloud, CRM OnDemand and eCommerce services as part of the Engineering organization. Prior to joining Oracle, Tom was Vice President of Cloud Computing and Chief Information Officer (CIO) at SuccessFactors acquired by SAP. Responsibilities in this role included service delivery, infrastructure management, Security and Corporate IT. Tom was widely published and a popular speaker on the technology and the business of the Cloud and as well as a frequent representative for SuccessFactors in the Financial community. Tom joined SuccessFactors from DriveCam the global leader in driver risk behavior and an early Software as a Service (SaaS) business. He served as both CIO and Senior Vice President of Engineering responsible for all software, firmware and hardware development as well as the company\'s business systems. Tom was recognized as the San Diego Technology Executive of the Year in 2008. Tom was Vice President of IT for QUALCOMM and CIO for QUALCOMM\'s CDMA Technologies (QCT) Group – the largest fabless semi-conductor in the world. Responsibilities included business and engineering systems. Tom was also active in business development activities including working with Amazon during the creation of the Kindle. Prior to joining QUALCOMM, Tom was Vice President and acting Chief Technology Officer (CTO) at eBay. Responsibilities included the redesign, development and delivery of the Web site after several significant outages. He was also responsible for establishing the firm\'s technology strategy to support the massive scale and shifting business requirements. Tom was responsible for developing and implementing business development strategies at eBay including the creation and establishment of eBay\'s Developers Program, eBay\'s StoreFront initiative and eBay\'s internationalization as the company expanded globally.  Prior to eBay, Tom served as the chief architect and Vice President of global architecture, security and vendor management for Gateway Computers. At Gateway, he managed the firm\'s major e-commerce initiatives, deployed the company\'s financing, ERP, CRM, and SFA applications, and led the technical due diligence for the firm\'s venture and strategic activities.\n\nTom has also worked as a senior executive in technology strategy, business development, and M&A for a variety of software and technology companies including IBM, KnowledgeWare, Exactium and Seer Technologies.',
       linkedin: 'https://www.linkedin.com/in/fisher-tom/',
+    }, {
+      name: 'Kat Cole',
+      pic: '/team/katcole.jpg',
+      title: 'President & COO of Athletic Greens; Former President and COO at Focus Brands',
+      bio: 'Kat Cole is an operator, investor, and advisor to high-growth businesses, funds, and brands with a focus on food and beverage, wellness, franchises, SMB tech, and web3. Kat is President, COO and Board member of Athletic Greens, one of the fastest growing wellness brands and subscription businesses. AG has ignited the Essentialist Nutrition Movement providing comprehensive and convenient daily nutrition, made simple, for everyone from busy moms and every day folks, to athletes, whether they are Paleo, Vegan, Keto, or gracefully aging just looking to level up their nutrition. Athletic Greens helps people around the world implement a strong foundation of their wellness with AG1, their all-in-one nutrition drink that replaces multivitamins and other supplements with the most bioavailable combination of 75 highest quality vitamins and minerals.\n\nIn January of 2021, she wrapped up a 10-year career leading Focus Brands as COO and President  (2016-2021) of the owner, franchisor and operator of global limited-service food brands, with billions in product sales in over 50 countries. As COO, she led the company\'s 8 brands: Cinnabon, Auntie Anne\'s, Moe\'s, Schlotzsky\'s, McAllister\'s, Carvel, Seattle\'s Best Coffee International, and Jamba with over 7000 operations globally as well as the multi-brand licensing and CPG business with over $1Billion in annual sales. In other roles at Focus Brands, before becoming COO, she was president of Cinnabon (2010-2014) and Group President of the multi-channel licensing division at Focus (2014-2016). Prior to Focus Brands, Kat was Vice President at Hooters, starting as a waitress, becoming a corporate employee by 20, VP by 26, and leading the company\'s global growth through franchising, training, and operations as a member of the global executive team culminating in the sale of the company into private equity in 2010.\n\nIn Kat\'s tenure at Focus Brands, she famously led the turnaround of Cinnabon out of the recession by strengthening the base franchise business, reinvigorating the brand, and launching what is now one of the largest restaurant brand CPG businesses in the world. She and her team doubled the EBITDA of that company in a few years, brought sustained growth to the franchisees, and led innovation in delivery, product development, licensing and partnerships that became core capabilities for the parent company that she would so move up to lead as President and COO. She is now investing and advising at the intersection of consumer, NFTs, web3 and the broader move to decentralization and the ownership economy.\n\nKat also helped lead the acquisition and integration of brands, led the restructuring of Focus Brands to prepare it for its next chapter as a growing house of global brands, and is known as a change agent for omni-channel brands, complex portfolio companies, and teams across private equity and venture backed ecosystems.\n\nKat is a Young Global Leader of the World Economic Forum,  in addition to Athletic Greens is a member of the Board of Directors of growth stage VC and PE backed companies Slice and Milk Bar, as well as on the Board of HumanCo SPAC. Her investment and advisory portfolio include over 60 early-stage companies, with a focus on omni-channel consumer product businesses. Kat is a past member of the United Nations Global Entrepreneurs Council, was featured on CBS\'s "Undercover Boss", and was named one of Fortune\'s 40 under 40. She is a college dropout, yet has her MBA in International Business from Georgia State University and an Honorary Doctorate from Johnson and Wales University.  She is past chair of the board of the Women\'s Foodservice Forum, and has led women\'s development initiatives in the US and Rwanda.\n\nKat is an outspoken advocate for women\'s issues and for the broader role of business in democratizing access to education and opportunity. ',
+      linkedin: 'https://www.linkedin.com/in/katcole',
     }
   ]
 };
 
 const news = [{
+  title: 'Placer.ai Raises $100M Series C At A $1B Valuation To Accelerate Growth and Product Development',
+  body: 'Placer.ai, the leader in location analytics and foot traffic data, announced today the closing of a $100M Series C funding round at a $1B valuation...',
+  date: 'January 2022',
+  link: 'https://www.placer.ai/blog/placer-ai-raises-100m-series-c-at-a-1b-valuation-to-accelerate-growth-and-product-development/'
+}, {
+  title: 'GrubMarket raises $200m in Series E funding round, eyes IPO',
+  body: 'GrubMarket, a San Francisco-based food supply chain e-commerce company, has raised $200m in a Series E funding round, bringing its total valuation to over $1.2bn...',
+  date: 'November 2021',
+  link: 'https://www.foodnavigator-usa.com/Article/2021/11/16/GrubMarket-raises-200m-in-Series-E-funding-round-eyes-IPO/'
+}, {
+  title: 'Branch raises $48M from Lee Fixel\'s Addition, Indeed to provide accelerated payments to workers',
+  body: 'Branch, which has built a flexible workforce payments platform, announced today it has raised $48 million in Series B funding and closed on a $500 million credit facility...',
+  date: 'August 2021',
+  link: 'https://techcrunch.com/2021/08/17/branch-raises-48m/'
+}, {
+  title: 'Drive-thru voice AI startup to double its team with $6.8M',
+  body: 'OpenCity, a Boston startup that provides an AI-powered voice assistant for drive-thru ordering, is raising new funds to double the size of its current team...',
+  date: 'August 2021',
+  link: 'https://www.bizjournals.com/boston/news/2021/08/04/ai-startup-opencity-raises-millions.html'
+}, {
   title: 'Cardlytics Completes Acquisition of Bridg',
   body: 'Cardlytics (NASDAQ: CDLX), one of the largest digital advertising platforms, announced today the completion of its acquisition of Bridg, a customer data platform...',
   date: 'May 2021',
@@ -123,12 +149,14 @@ const news = [{
   body: 'Branch today announced the launch of its Employer Payments Platform (EPP) to help businesses accelerate payments...',
   date: 'January 2021',
   link: 'https://www.businesswire.com/news/home/20210126005995/en/Branch-Launches-Employer-Payments-Platform-for-Businesses-to-Accelerate-Payments'
-}, {
-  title: 'Technology and Real Estate Must Blend Together',
-  body: 'Technology and real estate must blend together better today in order to support an evolving retail market...',
-  date: 'March 2018',
-  link: 'https://www.cnbc.com/2018/03/19/technology-and-real-estate-must-blend-together-mega-mall-owner-says.html'
 }];
+// OLD ARTICLES
+// , {
+//   title: 'Technology and Real Estate Must Blend Together',
+//   body: 'Technology and real estate must blend together better today in order to support an evolving retail market...',
+//   date: 'March 2018',
+//   link: 'https://www.cnbc.com/2018/03/19/technology-and-real-estate-must-blend-together-mega-mall-owner-says.html'
+// }
 
 export default function Home() {
   const onAdvisor = (index: number, arr: any[]) => {
@@ -326,7 +354,7 @@ export default function Home() {
                 {
                   team.advisors.map((a, i) => {
                     return (
-                      <div key={`advisor-${i}`} className={`${styles.advisor} ${styles.clickable} mb-5 md:mb-0 w-64 max-w-100`} onClick={() => onAdvisor(i, team.advisors)}>
+                      <div key={`advisor-${i}`} className={`${styles.advisor} ${styles.clickable} mb-5 md:mb-0 w-64 max-w-100${i === team.advisors.length - 1 ? ' lg:col-start-2' : ''}`} onClick={() => onAdvisor(i, team.advisors)}>
                         <div className={`${styles.advisorPic} h-72 w-full bg-cover transition-all duration-500`} style={{ backgroundImage: `url(${a.pic})` }}></div>
                         <h4 className="text-lg sm:text-xl mt-2">{a.name}</h4>
                         <h5 className="mt-1 text-sm text-gray-500 min-h-4">{a.title}</h5>
@@ -366,18 +394,32 @@ export default function Home() {
                     <p className="text-sm">Makes all your favorite foods without the carbs</p>
                   </div>
                 </a>
-                <a href="https://www.placer.ai/" target="_blank" className="block relative h-80 w-full border border-gray-500 bg-white border-t-0 border-r-0 border-l-0 md:border-b-0">
+                <a href="https://www.placer.ai/" target="_blank" className="block relative h-80 w-full border border-gray-500 bg-white border-t-0 border-r-0 border-l-0">
                   <div className={`${styles.placerai} bg-center h-full`}></div>
                   <div className={`${styles.appear} text-white opacity-0 transition-opacity duration-500 hover:opacity-100 flex flex-col justify-center items-center`}>
                     <h3 className="text-xl font-bold mb-5">PLACER.AI</h3>
                     <p className="text-sm">Providing retailers with actionable insights and location analytics into their audience and competition</p>
                   </div>
                 </a>
-                <a href="https://www.privacydynamics.io/" target="_blank" className="block relative h-80 w-full border border-gray-500 bg-white border-t-0 border-r-0 border-l-0 border-b-0 md:border-l">
-                  <div className={`${styles.pdynamics} bg-center h-full`}></div>
+                <a href="https://www.grubmarket.com/welcome/" target="_blank" className="block relative h-80 w-full border border-gray-500 bg-white border-t-0 border-r-0 border-l-0 md:border-l">
+                  <div className={`${styles.grubmarket} bg-center h-full`}></div>
                   <div className={`${styles.appear} text-white text-white opacity-0 transition-opacity duration-500 hover:opacity-100 flex flex-col justify-center items-center`}>
-                    <h3 className="text-xl font-bold mb-5">PRIVACY DYNAMICS</h3>
-                    <p className="text-sm">Protecting the future of personal data by providing no-code data privacy tools built for today's analytics engineers</p>
+                    <h3 className="text-xl font-bold mb-5">GRUBMARKET</h3>
+                    <p className="text-sm">The most affordable farm-to-table food delivery service offering a variety of organic and locally-sourced food and produce</p>
+                  </div>
+                </a>
+                <a href="https://www.opencity.co/" target="_blank" className="block relative h-80 w-full border border-gray-500 bg-white border-t-0 border-r-0 border-l-0 md:border-b-0 md:border-l">
+                  <div className={`${styles.opencity} bg-center h-full`}></div>
+                  <div className={`${styles.appear} text-white text-white opacity-0 transition-opacity duration-500 hover:opacity-100 flex flex-col justify-center items-center`}>
+                    <h3 className="text-xl font-bold mb-5">OPENCITY</h3>
+                    <p className="text-sm">Introducing an AI-powered voice assistant for drive-thru ordering</p>
+                  </div>
+                </a>
+                <a href="https://www.productscience.ai/" target="_blank" className="block relative h-80 w-full border border-gray-500 bg-white border-t-0 border-r-0 border-l-0 border-b-0 md:border-l">
+                  <div className={`${styles.productscience} bg-center h-full`}></div>
+                  <div className={`${styles.appear} text-white text-white opacity-0 transition-opacity duration-500 hover:opacity-100 flex flex-col justify-center items-center`}>
+                    <h3 className="text-xl font-bold mb-5">PRODUCT SCIENCE</h3>
+                    <p className="text-sm">Increases product metrics for mobile applications and helps apps work faster</p>
                   </div>
                 </a>
               </div>
