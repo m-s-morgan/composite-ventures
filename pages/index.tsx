@@ -356,11 +356,11 @@ export default function Home() {
               </div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-16 mb-3">Strategic Advisors</h2>
               <h3 className="text-gray-500 text-lg sm:text-xl md:text-2xl lg:text-3xl mb-9">Recognized Leaders in the Field</h3>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-2 px-5">
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-2 px-5">
                 {
                   team.advisors.map((a, i) => {
                     return (
-                      <div key={`advisor-${i}`} className={`${styles.advisor} ${styles.clickable} mb-5 md:mb-0 w-64 max-w-100${i === team.advisors.length - 1 ? ' lg:col-start-2' : ''}`} onClick={() => onAdvisor(i, team.advisors)}>
+                      <div key={`advisor-${i}`} className={`${styles.advisor} ${styles.clickable} mb-5 md:mb-0 w-64 max-w-100`} onClick={() => onAdvisor(i, team.advisors)}>
                         <div className={`${styles.advisorPic} h-72 w-full bg-cover transition-all duration-500`} style={{ backgroundImage: `url(${a.pic})` }}></div>
                         <h4 className="text-lg sm:text-xl mt-2">{a.name}</h4>
                         <h5 className="mt-1 text-sm text-gray-500 min-h-4">{a.title}</h5>
