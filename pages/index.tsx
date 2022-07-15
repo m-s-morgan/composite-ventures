@@ -414,18 +414,25 @@ export default function Home() {
                     <p className="text-sm">The most affordable farm-to-table food delivery service offering a variety of organic and locally-sourced food and produce</p>
                   </div>
                 </a>
-                <a href="https://www.opencity.co/" target="_blank" className="block relative h-80 w-full border border-gray-500 bg-white border-t-0 border-r-0 border-l-0 md:border-b-0 md:border-l">
+                <a href="https://www.opencity.co/" target="_blank" className="block relative h-80 w-full border border-gray-500 bg-white border-t-0 border-r-0 border-l-0">
                   <div className={`${styles.opencity} bg-center h-full`}></div>
                   <div className={`${styles.appear} text-white text-white opacity-0 transition-opacity duration-500 hover:opacity-100 flex flex-col justify-center items-center`}>
                     <h3 className="text-xl font-bold mb-5">OPENCITY</h3>
                     <p className="text-sm">Introducing an AI-powered voice assistant for drive-thru ordering</p>
                   </div>
                 </a>
-                <a href="https://www.productscience.ai/" target="_blank" className="block relative h-80 w-full border border-gray-500 bg-white border-t-0 border-r-0 border-l-0 border-b-0 md:border-l">
+                <a href="https://www.productscience.ai/" target="_blank" className="block relative h-80 w-full border border-gray-500 bg-white border-t-0 border-r-0 border-l-0 md:border-l">
                   <div className={`${styles.productscience} bg-center h-full`}></div>
                   <div className={`${styles.appear} text-white text-white opacity-0 transition-opacity duration-500 hover:opacity-100 flex flex-col justify-center items-center`}>
                     <h3 className="text-xl font-bold mb-5">PRODUCT SCIENCE</h3>
                     <p className="text-sm">Increases product metrics for mobile applications and helps apps work faster</p>
+                  </div>
+                </a>
+                <a href="https://datasembly.com/" target="_blank" className="block relative h-80 w-full border border-gray-500 bg-white border-t-0 border-r-0 border-l-0 border-b-0 md:col-span-2">
+                  <div className={`${styles.datasembly} bg-center h-full`}></div>
+                  <div className={`${styles.appear} text-white text-white opacity-0 transition-opacity duration-500 hover:opacity-100 flex flex-col justify-center items-center`}>
+                    <h3 className="text-xl font-bold mb-5">DATASEMBLY</h3>
+                    <p className="text-sm">Empowers brands and retailers with fully shareable competitive data from every store</p>
                   </div>
                 </a>
               </div>
